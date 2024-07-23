@@ -1,0 +1,39 @@
+[13-Sep-2019 04:41:10 UTC] PHP Warning:  Uncaught ErrorException: require(/home/itec2017/public_html/uvh/routes/api.php): failed to open stream: No such file or directory in /home/itec2017/public_html/uvh/vendor/laravel/framework/src/Illuminate/Routing/RouteFileRegistrar.php:35
+Stack trace:
+#0 /home/itec2017/public_html/uvh/vendor/laravel/framework/src/Illuminate/Routing/RouteFileRegistrar.php(35): Illuminate\Foundation\Bootstrap\HandleExceptions->handleError(2, 'require(/home/i...', '/home/itec2017/...', 35, Array)
+#1 /home/itec2017/public_html/uvh/vendor/laravel/framework/src/Illuminate/Routing/RouteFileRegistrar.php(35): require()
+#2 /home/itec2017/public_html/uvh/vendor/laravel/framework/src/Illuminate/Routing/Router.php(415): Illuminate\Routing\RouteFileRegistrar->register('/home/itec2017/...')
+#3 /home/itec2017/public_html/uvh/vendor/laravel/framework/src/Illuminate/Routing/Router.php(373): Illuminate\Routing\Router->loadRoutes('/home/itec2017/...')
+#4 /home/itec2017/public_html/uvh/vendor/laravel/framework/src/Illuminate/Routing/RouteRegistra in /home/itec2017/public_html/uvh/vendor/laravel/framework/src/Illuminate/Routing/RouteFileRegistrar.php on line 35
+[13-Sep-2019 04:41:10 UTC] PHP Fatal error:  Illuminate\Routing\RouteFileRegistrar::register(): Failed opening required '/home/itec2017/public_html/uvh/routes/api.php' (include_path='.:/opt/alt/php71/usr/share/pear') in /home/itec2017/public_html/uvh/vendor/laravel/framework/src/Illuminate/Routing/RouteFileRegistrar.php on line 35
+[14-Apr-2020 02:05:55 UTC] PHP Parse error:  syntax error, unexpected '?' in /home/itec2017/public_html/urbanvillagehomes/vendor/laravel/framework/src/Illuminate/Foundation/helpers.php on line 500
+[14-Apr-2020 02:05:55 UTC] PHP Parse error:  syntax error, unexpected '?' in /home/itec2017/public_html/urbanvillagehomes/vendor/laravel/framework/src/Illuminate/Foundation/helpers.php on line 500
+[14-Apr-2020 02:05:55 UTC] PHP Parse error:  syntax error, unexpected '?' in /home/itec2017/public_html/urbanvillagehomes/vendor/laravel/framework/src/Illuminate/Foundation/helpers.php on line 500
+[14-Apr-2020 02:05:55 UTC] PHP Parse error:  syntax error, unexpected '?' in /home/itec2017/public_html/urbanvillagehomes/vendor/laravel/framework/src/Illuminate/Foundation/helpers.php on line 500
+[14-Apr-2020 02:05:56 UTC] PHP Parse error:  syntax error, unexpected '?' in /home/itec2017/public_html/urbanvillagehomes/vendor/laravel/framework/src/Illuminate/Foundation/helpers.php on line 500
+[14-Apr-2020 02:05:56 UTC] PHP Parse error:  syntax error, unexpected '?' in /home/itec2017/public_html/urbanvillagehomes/vendor/laravel/framework/src/Illuminate/Foundation/helpers.php on line 500
+[14-Apr-2020 02:05:57 UTC] PHP Parse error:  syntax error, unexpected '?' in /home/itec2017/public_html/urbanvillagehomes/vendor/laravel/framework/src/Illuminate/Foundation/helpers.php on line 500
+[14-Apr-2020 02:05:57 UTC] PHP Parse error:  syntax error, unexpected '?' in /home/itec2017/public_html/urbanvillagehomes/vendor/laravel/framework/src/Illuminate/Foundation/helpers.php on line 500
+[14-Apr-2020 02:06:07 UTC] PHP Parse error:  syntax error, unexpected '?' in /home/itec2017/public_html/urbanvillagehomes/vendor/laravel/framework/src/Illuminate/Foundation/helpers.php on line 500
+[14-Apr-2020 02:06:07 UTC] PHP Parse error:  syntax error, unexpected '?' in /home/itec2017/public_html/urbanvillagehomes/vendor/laravel/framework/src/Illuminate/Foundation/helpers.php on line 500
+[14-Apr-2020 02:06:09 UTC] PHP Parse error:  syntax error, unexpected '?' in /home/itec2017/public_html/urbanvillagehomes/vendor/laravel/framework/src/Illuminate/Foundation/helpers.php on line 500
+[14-Apr-2020 02:06:10 UTC] PHP Parse error:  syntax error, unexpected '?' in /home/itec2017/public_html/urbanvillagehomes/vendor/laravel/framework/src/Illuminate/Foundation/helpers.php on line 500
+[14-Apr-2020 02:06:14 UTC] PHP Parse error:  syntax error, unexpected '?' in /home/itec2017/public_html/urbanvillagehomes/vendor/laravel/framework/src/Illuminate/Foundation/helpers.php on line 500
+[14-Apr-2020 02:06:18 UTC] PHP Parse error:  syntax error, unexpected '?' in /home/itec2017/public_html/urbanvillagehomes/vendor/laravel/framework/src/Illuminate/Foundation/helpers.php on line 500
+[14-Apr-2020 02:06:18 UTC] PHP Parse error:  syntax error, unexpected '?' in /home/itec2017/public_html/urbanvillagehomes/vendor/laravel/framework/src/Illuminate/Foundation/helpers.php on line 500
+[14-Apr-2020 02:06:20 UTC] PHP Parse error:  syntax error, unexpected '?' in /home/itec2017/public_html/urbanvillagehomes/vendor/laravel/framework/src/Illuminate/Foundation/helpers.php on line 500
+[14-Apr-2020 02:06:21 UTC] PHP Parse error:  syntax error, unexpected '?' in /home/itec2017/public_html/urbanvillagehomes/vendor/laravel/framework/src/Illuminate/Foundation/helpers.php on line 500
+[14-Apr-2020 02:06:21 UTC] PHP Parse error:  syntax error, unexpected '?' in /home/itec2017/public_html/urbanvillagehomes/vendor/laravel/framework/src/Illuminate/Foundation/helpers.php on line 500
+[14-Apr-2020 02:06:22 UTC] PHP Parse error:  syntax error, unexpected '?' in /home/itec2017/public_html/urbanvillagehomes/vendor/laravel/framework/src/Illuminate/Foundation/helpers.php on line 500
+[14-Apr-2020 02:06:23 UTC] PHP Parse error:  syntax error, unexpected '?' in /home/itec2017/public_html/urbanvillagehomes/vendor/laravel/framework/src/Illuminate/Foundation/helpers.php on line 500
+[14-Apr-2020 02:06:25 UTC] PHP Parse error:  syntax error, unexpected '?' in /home/itec2017/public_html/urbanvillagehomes/vendor/laravel/framework/src/Illuminate/Foundation/helpers.php on line 500
+[14-Apr-2020 02:06:31 UTC] PHP Parse error:  syntax error, unexpected '?' in /home/itec2017/public_html/urbanvillagehomes/vendor/laravel/framework/src/Illuminate/Foundation/helpers.php on line 500
+[14-Apr-2020 02:06:32 UTC] PHP Parse error:  syntax error, unexpected '?' in /home/itec2017/public_html/urbanvillagehomes/vendor/laravel/framework/src/Illuminate/Foundation/helpers.php on line 500
+[17-Oct-2020 13:00:08 UTC] PHP Parse error:  syntax error, unexpected '?' in /home/itec2017/public_html/urbanvillagehomes/vendor/laravel/framework/src/Illuminate/Foundation/helpers.php on line 500
+[17-Oct-2020 13:00:08 UTC] PHP Parse error:  syntax error, unexpected '?' in /home/itec2017/public_html/urbanvillagehomes/vendor/laravel/framework/src/Illuminate/Foundation/helpers.php on line 500
+[17-Oct-2020 13:03:13 UTC] PHP Parse error:  syntax error, unexpected '?' in /home/itec2017/public_html/urbanvillagehomes/vendor/laravel/framework/src/Illuminate/Foundation/helpers.php on line 500
+[17-Oct-2020 13:04:43 UTC] PHP Parse error:  syntax error, unexpected '?' in /home/itec2017/public_html/urbanvillagehomes/vendor/laravel/framework/src/Illuminate/Foundation/helpers.php on line 500
+[17-Oct-2020 13:05:27 UTC] PHP Parse error:  syntax error, unexpected '?' in /home/itec2017/public_html/urbanvillagehomes/vendor/laravel/framework/src/Illuminate/Foundation/helpers.php on line 500
+[17-Oct-2020 13:05:39 UTC] PHP Parse error:  syntax error, unexpected '?' in /home/itec2017/public_html/urbanvillagehomes/vendor/laravel/framework/src/Illuminate/Foundation/helpers.php on line 500
+[03-Nov-2020 14:11:52 UTC] PHP Parse error:  syntax error, unexpected '?' in /home/itec2017/public_html/urbanvillagehomes/vendor/laravel/framework/src/Illuminate/Foundation/helpers.php on line 500
+[03-Nov-2020 14:12:11 UTC] PHP Parse error:  syntax error, unexpected '?' in /home/itec2017/public_html/urbanvillagehomes/vendor/laravel/framework/src/Illuminate/Foundation/helpers.php on line 500
