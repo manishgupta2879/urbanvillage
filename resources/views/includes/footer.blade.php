@@ -86,7 +86,7 @@
                                 <!-- Email -->
                                 <li class="d-flex flex-row align-items-center justify-content-start">
                                     <div><img src="{{ asset('images/envelope.svg') }}" alt=""></div>
-                                    <span>info@urbanvillagehomes.com</span>
+                                    <mailto:span>info@urbanvillagehomes.com</span>
                                 </li>
                             </ul>
                         </div>
@@ -103,7 +103,7 @@
                         <!--<div class="footer_submit"><a href="#">submit listing</a></div>-->
                     </div>
                 </div>
-                
+
                 <div class="col-xl-12 col-lg-12 footer_col">
                     <img src="{{ asset('images/safety_logos.png') }}"alt="UVH Safe Agent" class="img-fluid" />
                 </div>
@@ -135,7 +135,7 @@
 </div>
 
 <!--<div id="covid_popup" class="modal">
-     Modal content 
+     Modal content
     <div class="modal-content">
         <div class="modal-header" style="height: 40px;">
             <span class="close-btn-covid">&times;</span>
@@ -160,7 +160,7 @@
 </div>-->
 
 <!--<div id="covid_popup" class="modal">
-    <!-- Modal content 
+    <!-- Modal content
     <div class="modal-content">
         <div class="modal-header" style="height: 40px;">
             <span class="close-btn-covid">&times;</span>
@@ -224,28 +224,35 @@
             });
         });
 
-        $('#owl-carousel-new').owlCarousel({
-            loop: true,
-            margin: 10,
-            nav: false,
-            navText: [
-                "",
-                ""
-            ],
-            autoplay: true,
-            autoplayHoverPause: true,
-            responsive: {
-                0: {
-                    items: 1
-                },
-                600: {
-                    items: 3
-                },
-                1000: {
-                    items: 5
-                }
+
+        var owl = $('#about-us-carousel').owlCarousel({
+        loop: true,
+        margin: 10,
+        nav: false,
+        autoplay: true,
+        autoplayHoverPause: true,
+        responsive: {
+            0: {
+                items: 1
+            },
+            600: {
+                items: 3
+            },
+            1000: {
+                items: 5
             }
-        })
+        }
+    });
+
+    // Custom Navigation Events
+    $('.custom-next').click(function() {
+        owl.trigger('next.owl.carousel');
+    });
+
+    $('.custom-prev').click(function() {
+        owl.trigger('prev.owl.carousel', [300]);
+    });
+
     </script>
     <script type="text/javascript" src="https://www.google.com/recaptcha/api.js?onload=recaptchaCallBack&amp;render=explicit&amp;hl=en" async></script>
 
@@ -281,7 +288,7 @@
   "name" : "Urban Village Homes",
   "image" : "https://www.urbanvillagehomes.com/images/logo.jpg",
   "telephone" : "+44 020 3519 9121",
-  "email" : "info@urbanvillagehomes.com",
+  "email" : "mailto:info@urbanvillagehomes.com",
   "address" : {
     "@type" : "PostalAddress",
     "streetAddress" : "121 Denmark Hill,",
