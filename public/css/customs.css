@@ -1221,11 +1221,9 @@ img {vertical-align: middle;}
         left: 0 !important;
         position: relative;
     }
-
     ul#horizontal-list {
         list-style: none;
     }
-
     ul#horizontal-list li {
         display: inline-block !important;
     }

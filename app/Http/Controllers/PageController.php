@@ -20,7 +20,7 @@ class PageController extends Controller
             ->orderBy('created_at', 'desc')
             ->take(4)
             ->get();
-            
+
         //set withdrawn id
         $withdrawn = array(6, 7);
 
@@ -108,12 +108,12 @@ class PageController extends Controller
                 $property['displayAddress'] = $property['propertyFeature1'];
             }
         }
-        
+
         // get virtual tour link if available
         if(isset($property['virtualTours'])){
             $property['virtualTours'] = json_decode($property['virtualTours']);
         }
-        
+
         // get external links if available
         if(isset($property['externalLinks'])){
             $property['externalLinks'] = json_decode($property['externalLinks']);
@@ -187,7 +187,7 @@ class PageController extends Controller
         $js_files   = array('single','slider');
 
         $property_id = $request->profileID;
-        
+
         //latest featured properties
         $property = Property::where('status', 1)
             ->where('propertyID', $property_id)
@@ -201,12 +201,12 @@ class PageController extends Controller
                 $property['displayAddress'] = $property['propertyFeature1'];
             }
         }
-        
+
         // get virtual tour link if available
         if(isset($property['virtualTours'])){
             $property['virtualTours'] = json_decode($property['virtualTours']);
         }
-        
+
         // get external links if available
         if(isset($property['externalLinks'])){
             $property['externalLinks'] = json_decode($property['externalLinks']);
@@ -278,7 +278,7 @@ class PageController extends Controller
     {
         $css_files  = array('about','listings','listings_responsive');
         $js_files   = array('listings', 'property_search');
-        
+
         //set withdrawn id
         $withdrawn = array(6, 7);
         //set sol/ sold stc/ let/ let agreed id
@@ -509,12 +509,12 @@ class PageController extends Controller
                  'include_current'        => $request['include_current'],
              ]);
     }
-    
+
     public function life_magazines(Request $request)
     {
         $css_files  = array('about','listings','listings_responsive');
         $js_files   = array('listings', 'property_search');
-        
+
 
         //Get all life magazines
         $lifeMagazines = new LifeMagazine();
@@ -534,12 +534,12 @@ class PageController extends Controller
 
     public function new_aboutus(Request $request)
     {
-       
-        
+
+
          return view('pages.new_aboutus_view',
              [
                  'page_title'    => 'About us',
-                 
+
              ]);
     }
 
@@ -1353,8 +1353,8 @@ class PageController extends Controller
                 'js_files'      => $js_files
             ]);
     }
-    
-    
+
+
 
     public function show_complaints_procedure()
     {
