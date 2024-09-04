@@ -364,6 +364,7 @@ img {
 .dark.breakpoint-on .classynav > ul > li > a,
 .dark.breakpoint-on .classy-navbar .classy-menu {
   background-color: #1e1332;
+  color: #fff !important;
 }
 
 .is-sticky .dark .classynav ul li .dropdownheader-area {
@@ -516,7 +517,8 @@ img {
   .main-header-area .classynav ul li a {
     color: #1e1332;
     text-transform: uppercase;
-    font-weight: 600; }
+    /* font-weight: 600;  */
+  }
 
     .main-header-area .classynav ul li a.active {
         color: #a5bf16;
@@ -524,20 +526,28 @@ img {
     .main-header-area .classynav ul li a.active:hover {
         color: #9e0073;
     }
-
+    .main-header-area .classynav ul li .BOOK-VALUATION:hover{
+      color: #fff !important;
+    }
     .main-header-area .classynav ul li a:hover {
-        color: #a5bf16;
+        color: #000 !important;
     }
 
     .main-header-area .classynav ul li ul li a{
         color: white;
     }
 
+    .main-header-area .classynav ul li ul li a:hover{
+      color: #fff !important;
+  }
+  .classynav .BOOK-VALUATION:hover{
+   color: #fff !important;
+  }
   .main-header-area .nav-brand {
     line-height: 1; }
 
     .main-header-area .nav-brand img{
-    width: 220px !important;}
+    width: 150px !important;}
 
     @media only screen and (min-width: 992px) and (max-width: 1199px) {
       .main-header-area .nav-brand {
@@ -655,17 +665,23 @@ img {
 }
 
 .is-sticky .main-header-area .classynav ul li a {
-    color: #1e1332; !important; }
+    color: #1e1332 !important; }
 
-.is-sticky .dark .classynav ul li .dropdown li a {
-    color: white; !important;;
+    .is-sticky .main-header-area .classynav .dropdown-3 li a {
+      color: #fff !important;
+  }
+  .is-sticky .main-header-area .classynav .dropdown-3 li a:hover {
+    color: #fff !important;
+}
+.is-sticky .dark .classynav .BOOK-VALUATION {
+    color: white !important;;
 }
 .is-sticky .dark .classynav ul li .dropdown li a:hover {
     color: #a5bb1a; }
 
 
 .is-sticky .main-header-area .classynav ul li a:hover {
-    color: #a5bb1a; }
+    color: #000 !important; }
 
 .is-sticky .main-header-area .south-search-form input {
     border: 1px solid rgba(20, 72, 114, 0.4);

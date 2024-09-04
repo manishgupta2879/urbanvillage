@@ -17,10 +17,6 @@
     <link rel="stylesheet" href="{{ asset('css/extra/style.css') }}">
     <link rel="stylesheet" href="{{ asset('css/jquery.cookiebar.css') }}">
     <link rel="stylesheet" type="text/css" href="{{ asset('css/customs.css?t=5') }}">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300&display=swap" rel="stylesheet">
     @if(isset($css_files))
         @foreach($css_files AS $k => $css_file)
             <link rel="stylesheet" type="text/css" href="{{ asset('css/'.$css_file.'.css') }}">
@@ -85,9 +81,30 @@
         height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     <!-- End Google Tag Manager (noscript) -->
 
+<!-- ##### Header Area Start ##### -->
+<header style="border-bottom: 0px solid green;">
 
-
-   
+    <!-- Top Header Area -->
+    <div class="top-header-area">
+        <div class="h-100 d-md-flex justify-content-between align-items-center">
+            <div class="email-address">
+                <span><i class="fa fa-envelope-o"></i> &nbsp;<a href="mailto:info@urbanvillagehomes.com">info@urbanvillagehomes.com</a></span>
+                <span><i class="fa fa-location-arrow move-left"></i> &nbsp;<a>121 Denmark Hill, SE5 8EN, London</a></span>
+                <span class="right-corner"><i class="fa fa-phone move-left"></i> &nbsp;<a>+44 020 3519 9121</a></span>
+            </div>
+            <div class="phone-number d-flex">
+                <div class="social">
+                    <ul class="d-flex flex-row align-items-center justify-content-start">
+                        <li class="facebook-icon"><a target="_blank" href="https://www.facebook.com/urbanvillagehomes"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
+                        <li class="linkedin-icon"><a target="_blank" href="https://www.linkedin.com/company/urbanvillagehomes/"><i class="fa fa-linkedin" aria-hidden="true"></i></a></li>
+                        <li class="twitter-icon"><a target="_blank" href="https://twitter.com/UVHomes1"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
+                        <!--<li class="pinterest-icon"><a href="https://www.pinterest.co.uk/urbanvillageuk/"><i class="fa fa-pinterest" aria-hidden="true"></i></a></li>-->
+                        <li class="instagram-icon"><a target="_blank" href="https://www.instagram.com/urbanvillagehomes/"><i class="fa fa-instagram" aria-hidden="true"></i></a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
 
 <style>
 #stickyHeader-sticky-wrapper{
@@ -98,12 +115,10 @@
     <div class="main-header-area" id="stickyHeader">
         <div class="classy-nav-container breakpoint-off">
             <!-- Classy Menu -->
-            <nav class="classy-navbar justify-content-between mt-3" id="southNav">
+            <nav class="classy-navbar justify-content-between" id="southNav">
 
                 <!-- Logo -->
-                <a class="nav-brand" href="{{ url('/') }}">
-                    <img src="{{ asset('images/logo.jpg') }}" alt="Logo" style="width: 150px; height: auto;">
-                </a>
+                <a class="nav-brand" href="{{ url('/') }}"><img src="{{ asset('images/logo.jpg') }}" alt="Logo"></a>
 
                 <!-- Navbar Toggler -->
                 <div class="classy-navbar-toggler">
@@ -119,28 +134,33 @@
 
                     <!-- Nav Start -->
                     <div class="classynav">
-                        <ul>
-                            <!-- <li><a href="{{ url('/') }}"><i class="fa fa-home"></i></a></li> -->
-                          
-                            <li><a href="#" class="text-black">SALES <svg xmlns="http://www.w3.org/2000/svg" fill="black" viewBox="0 0 320 512" style="width: 35px; height:20px"><path  d="M137.4 374.6c12.5 12.5 32.8 12.5 45.3 0l128-128c9.2-9.2 11.9-22.9 6.9-34.9s-16.6-19.8-29.6-19.8L32 192c-12.9 0-24.6 7.8-29.6 19.8s-2.2 25.7 6.9 34.9l128 128z"/></svg></a>
+                        <ul >
+                            <li><a href="{{ url('/') }}"><i class="fa fa-home"></i></a></li>
+                            <li><a href="#">ABOUT US</a>
+                                <ul class="dropdown">
+                                    <li><a href="{{ url('who-we-are') }}">Who We are</a></li>
+                                    <li><a href="{{ url('meet-the-team') }}">Meet the Team</a></li>
+                                    <li><a href="{{ url('free-home-staging-consultation') }}">Free Home Staging Consultation</a></li>
+                                    <li><a href="{{ url('blog') }}">Blog</a></li>
+                                    <li><a href="{{ url('community-partnership') }}">Community Partnership</a></li>
+                                    <li><a href="{{ url('life-magazines') }}">Life Magazines</a></li>
+                                    <li><a href="{{ url('new-aboutus') }}">New About Us</a></li>
+                                </ul>
+                            </li>
+                            <li><a href="#">SALES</a>
                                 <ul class="dropdown dropdown-3">
                                     <li><a href="{{ url('property/buyers') }}">Buyers</a></li>
                                     <li><a href="{{ url('sellers') }}">Sellers</a></li>
                                 </ul>
                             </li>
-                            <li><a href="#" class="text-black">LETTINGS  <svg xmlns="http://www.w3.org/2000/svg" fill="black" viewBox="0 0 320 512" style="width: 35px; height:20px"><path   d="M137.4 374.6c12.5 12.5 32.8 12.5 45.3 0l128-128c9.2-9.2 11.9-22.9 6.9-34.9s-16.6-19.8-29.6-19.8L32 192c-12.9 0-24.6 7.8-29.6 19.8s-2.2 25.7 6.9 34.9l128 128z"/></svg></a>
+                            <li><a href="#">LETTINGS</a>
                                 <ul class="dropdown dropdown-3">
                                     <li><a href="{{ url('property/tenants') }}">Tenants</a></li>
                                     <li><a href="{{ url('landlords') }}">Landlords</a></li>
                                 </ul>
                             </li>
-                            <li><a href="{{ url('new-aboutus') }}"> About Us</a>
-                                 
-                            </li>
-                            <li><a href="{{ url('blog') }}" class="text-black">BLOG</a></li>
-                            <li><a href="{{ url('contact') }}" class="text-black">CONTACT</a></li>
-                            <li>
-                            <a href="https://urban-village-homes.engage.epropservices.com/" class="BOOK-VALUATION text-white ml-4">BOOK A VALUATION</a></li>
+                            <li><a href="{{ url('testimonials') }}">REVIEWS</a></li>
+                            <li><a href="{{ url('contact') }}">CONTACT</a></li>
                         </ul>
 
                         <!-- Search Form -->
