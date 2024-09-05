@@ -1,4 +1,5 @@
 @include('includes.header')
+<link rel="stylesheet" href="{{ asset('css/new_aboutus.css') }}">
 <style>
     label{
        float: left;

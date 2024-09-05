@@ -36,7 +36,7 @@
                         <div class="col-sm-12 col-md-4">
                             <a href="{{ url('blog/view/'.$post->slug) }}">
                                 <div class="card">
-                                    <img class="card-img-top" src="{{ Voyager::image($post->image) }}" alt="UVH Blog - {{ $post->title }}">
+                                    <img class="card-img-top" src="{{ Storage::url($post->image) }}" alt="UVH Blog - {{ $post->title }}">
                                     <div class="card-body">
                                         <h4 class="card-title">{{ $post->title }}</h4>
                                         <p class="card-subtitle mb-2 text-muted">

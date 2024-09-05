@@ -1,4 +1,8 @@
 @include('includes.header')
+
+<link rel="stylesheet" href="{{ asset('css/new_aboutus.css') }}">
+<link rel="stylesheet" href="{{ asset('css/page_header.css') }}">
+
 <!--<header class="header-area home-banner">
     <img src="{{ asset('images/banner/buyers.jpg') }}" alt="banner" />
 </header>-->
@@ -9,9 +13,13 @@
     </ol>
 </div>
 
-@include('includes.section_search')
+<div class="page-title-div"> Selling your property with Urban Village </div>
+<div class= "page-subtitle-div"> Discover why others choose to partner with us </div>
+
 <div class="featured">
     <div class="container">
+
+        
         
         @if(count($properties))
         <div class="row featured_row move_up_top-2">
@@ -21,7 +29,7 @@
                         <div class="listing_image">
                             <div class="listing_image_container">
                                 <a href="{{ url('property/'.$property->propertyID.'/'.$property->slug) }}">
-                                    <img src="{{ Voyager::image($property->image) }}" alt="Urban Village Home - {{ $property->displayAddress }}">
+                                    <img src="{{ $property->image }}" alt="Urban Village Home - {{ $property->displayAddress }}">
                                 </a>
                             </div>
                             <div class="tags d-flex flex-row align-items-start justify-content-start flex-wrap">

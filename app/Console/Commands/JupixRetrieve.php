@@ -196,6 +196,7 @@ class JupixRetrieve extends Command
                         $api_modified = new \DateTime($property_image['modified']);
                         if ($api_modified > $db_modified)
                         {
+                            try {
                             //Update Record
                             Resource::destroy($resource['id']);
                             Storage::delete('public\\'.$resource['path']);
@@ -216,8 +217,28 @@ class JupixRetrieve extends Command
                             $new_resource->created_at = session('now_date');
                             $new_resource->updated_at = session('now_date');
                             $new_resource->save();
+                        } catch (\Exception $e) {
+                            // Log the exception message
+                            Log::error('Error downloading image: ' . $e->getMessage());
+                        
+                            // Optionally, you can notify via Telegram or any other method
+                            $text = '*JUPIX API UPDATE!*'.chr(10).chr(10).
+                                'Status: FAILED'.chr(10).
+                                'Date: '.date('Y-m-d H:i:s').chr(10).
+                                'Error: Failed to download image for property ID ' . $property_array['propertyID'] . chr(10).
+                                'Exception: '.$e->getMessage().chr(10);
+                        
+                            $data = [
+                                'parse_mode' => 'Markdown',
+                                'chat_id' => '-340968060',
+                                'text' => $text
+                            ];
+                        
+                            //$telegram_response = file_get_contents(env('COM_TELEGRAM')."/sendMessage?" . http_build_query($data) );
+                        }
                         }
                     }else {
+                        try {
                         //New Record
                         //Download image from url and upload to server
                         $content = file_get_contents($property_image['image']);
@@ -235,6 +256,25 @@ class JupixRetrieve extends Command
                         $new_resource->created_at = session('now_date');
                         $new_resource->updated_at = session('now_date');
                         $new_resource->save();
+                    } catch (\Exception $e) {
+                        // Log the exception message
+                        Log::error('Error downloading image: ' . $e->getMessage());
+                    
+                        // Optionally, you can notify via Telegram or any other method
+                        $text = '*JUPIX API UPDATE!*'.chr(10).chr(10).
+                            'Status: FAILED'.chr(10).
+                            'Date: '.date('Y-m-d H:i:s').chr(10).
+                            'Error: Failed to download image for property ID ' . $property_array['propertyID'] . chr(10).
+                            'Exception: '.$e->getMessage().chr(10);
+                    
+                        $data = [
+                            'parse_mode' => 'Markdown',
+                            'chat_id' => '-340968060',
+                            'text' => $text
+                        ];
+                    
+                        //$telegram_response = file_get_contents(env('COM_TELEGRAM')."/sendMessage?" . http_build_query($data) );
+                    }
                     }
                 }
 
@@ -281,6 +321,7 @@ class JupixRetrieve extends Command
                         $api_modified = new \DateTime($property_floorplan['modified']);
                         if ($api_modified > $db_modified)
                         {
+                            try {
                             //Update Record
                             Resource::destroy($resource['id']);
                             Storage::delete('public\\'.$resource['path']);
@@ -301,8 +342,28 @@ class JupixRetrieve extends Command
                             $new_resource->created_at = session('now_date');
                             $new_resource->updated_at = session('now_date');
                             $new_resource->save();
+                        } catch (\Exception $e) {
+                            // Log the exception message
+                            Log::error('Error downloading image: ' . $e->getMessage());
+                        
+                            // Optionally, you can notify via Telegram or any other method
+                            $text = '*JUPIX API UPDATE!*'.chr(10).chr(10).
+                                'Status: FAILED'.chr(10).
+                                'Date: '.date('Y-m-d H:i:s').chr(10).
+                                'Error: Failed to download image for property ID ' . $property_array['propertyID'] . chr(10).
+                                'Exception: '.$e->getMessage().chr(10);
+                        
+                            $data = [
+                                'parse_mode' => 'Markdown',
+                                'chat_id' => '-340968060',
+                                'text' => $text
+                            ];
+                        
+                            //$telegram_response = file_get_contents(env('COM_TELEGRAM')."/sendMessage?" . http_build_query($data) );
+                        }
                         }
                     }else {
+                        try {
                         //New Record
                         //Download floorplan from url and upload to server
                         $content = file_get_contents($property_floorplan['floorplan']);
@@ -320,6 +381,25 @@ class JupixRetrieve extends Command
                         $new_resource->created_at = session('now_date');
                         $new_resource->updated_at = session('now_date');
                         $new_resource->save();
+                    } catch (\Exception $e) {
+                        // Log the exception message
+                        Log::error('Error downloading brochure: ' . $e->getMessage());
+                    
+                        // Optionally, you can notify via Telegram or any other method
+                        $text = '*JUPIX API UPDATE!*'.chr(10).chr(10).
+                            'Status: FAILED'.chr(10).
+                            'Date: '.date('Y-m-d H:i:s').chr(10).
+                            'Error: Failed to download brochure for property ID ' . $property_array['propertyID'] . chr(10).
+                            'Exception: '.$e->getMessage().chr(10);
+                    
+                        $data = [
+                            'parse_mode' => 'Markdown',
+                            'chat_id' => '-340968060',
+                            'text' => $text
+                        ];
+                    
+                        //$telegram_response = file_get_contents(env('COM_TELEGRAM')."/sendMessage?" . http_build_query($data) );
+                    }
                     }
                 }
 
@@ -366,6 +446,7 @@ class JupixRetrieve extends Command
                         $api_modified = new \DateTime($property_epcGraph['modified']);
                         if ($api_modified > $db_modified)
                         {
+                            try{
                             //Update Record
                             Resource::destroy($resource['id']);
                             Storage::delete('public\\'.$resource['path']);
@@ -386,8 +467,28 @@ class JupixRetrieve extends Command
                             $new_resource->created_at = session('now_date');
                             $new_resource->updated_at = session('now_date');
                             $new_resource->save();
+                        } catch (\Exception $e) {
+                            // Log the exception message
+                            Log::error('Error downloading image: ' . $e->getMessage());
+                        
+                            // Optionally, you can notify via Telegram or any other method
+                            $text = '*JUPIX API UPDATE!*'.chr(10).chr(10).
+                                'Status: FAILED'.chr(10).
+                                'Date: '.date('Y-m-d H:i:s').chr(10).
+                                'Error: Failed to download image for property ID ' . $property_array['propertyID'] . chr(10).
+                                'Exception: '.$e->getMessage().chr(10);
+                        
+                            $data = [
+                                'parse_mode' => 'Markdown',
+                                'chat_id' => '-340968060',
+                                'text' => $text
+                            ];
+                        
+                            //$telegram_response = file_get_contents(env('COM_TELEGRAM')."/sendMessage?" . http_build_query($data) );
+                        }
                         }
                     }else {
+                        try{
                         //New Record
                         //Download epcGraph from url and upload to server
                         $content = file_get_contents($property_epcGraph['epcGraph']);
@@ -405,6 +506,25 @@ class JupixRetrieve extends Command
                         $new_resource->created_at = session('now_date');
                         $new_resource->updated_at = session('now_date');
                         $new_resource->save();
+                    } catch (\Exception $e) {
+                        // Log the exception message
+                        Log::error('Error downloading image: ' . $e->getMessage());
+                    
+                        // Optionally, you can notify via Telegram or any other method
+                        $text = '*JUPIX API UPDATE!*'.chr(10).chr(10).
+                            'Status: FAILED'.chr(10).
+                            'Date: '.date('Y-m-d H:i:s').chr(10).
+                            'Error: Failed to download image for property ID ' . $property_array['propertyID'] . chr(10).
+                            'Exception: '.$e->getMessage().chr(10);
+                    
+                        $data = [
+                            'parse_mode' => 'Markdown',
+                            'chat_id' => '-340968060',
+                            'text' => $text
+                        ];
+                    
+                        //$telegram_response = file_get_contents(env('COM_TELEGRAM')."/sendMessage?" . http_build_query($data) );
+                    }
                     }
                 }
 
@@ -451,6 +571,7 @@ class JupixRetrieve extends Command
                         $api_modified = new \DateTime($property_brochure['modified']);
                         if ($api_modified > $db_modified)
                         {
+                            try{
                             //Update Record
                             Resource::destroy($resource['id']);
                             Storage::delete('public\\'.$resource['path']);
@@ -471,8 +592,28 @@ class JupixRetrieve extends Command
                             $new_resource->created_at = session('now_date');
                             $new_resource->updated_at = session('now_date');
                             $new_resource->save();
+                        } catch (\Exception $e) {
+                            // Log the exception message
+                            Log::error('Error downloading image: ' . $e->getMessage());
+                        
+                            // Optionally, you can notify via Telegram or any other method
+                            $text = '*JUPIX API UPDATE!*'.chr(10).chr(10).
+                                'Status: FAILED'.chr(10).
+                                'Date: '.date('Y-m-d H:i:s').chr(10).
+                                'Error: Failed to download image for property ID ' . $property_array['propertyID'] . chr(10).
+                                'Exception: '.$e->getMessage().chr(10);
+                        
+                            $data = [
+                                'parse_mode' => 'Markdown',
+                                'chat_id' => '-340968060',
+                                'text' => $text
+                            ];
+                        
+                            //$telegram_response = file_get_contents(env('COM_TELEGRAM')."/sendMessage?" . http_build_query($data) );
+                        }
                         }
                     }else {
+                        try {
                         //New Record
                         //Download brochure from url and upload to server
                         $content = file_get_contents($property_brochure['brochure']);
@@ -490,7 +631,27 @@ class JupixRetrieve extends Command
                         $new_resource->created_at = session('now_date');
                         $new_resource->updated_at = session('now_date');
                         $new_resource->save();
+                    } catch (\Exception $e) {
+                        // Log the exception message
+                        Log::error('Error downloading brochure: ' . $e->getMessage());
+                    
+                        // Optionally, you can notify via Telegram or any other method
+                        $text = '*JUPIX API UPDATE!*'.chr(10).chr(10).
+                            'Status: FAILED'.chr(10).
+                            'Date: '.date('Y-m-d H:i:s').chr(10).
+                            'Error: Failed to download brochure for property ID ' . $property_array['propertyID'] . chr(10).
+                            'Exception: '.$e->getMessage().chr(10);
+                    
+                        $data = [
+                            'parse_mode' => 'Markdown',
+                            'chat_id' => '-340968060',
+                            'text' => $text
+                        ];
+                    
+                        //$telegram_response = file_get_contents(env('COM_TELEGRAM')."/sendMessage?" . http_build_query($data) );
                     }
+                    }
+                    
                 }
 
 
@@ -535,6 +696,8 @@ class JupixRetrieve extends Command
 
         session()->forget('now_date');
 
+        Log::info('--- END of JupixRetrieve' );
+
         }catch(exception $e){
             //Telegram Update
             $now_date = date('Y-m-d H:i:s');
@@ -551,7 +714,7 @@ class JupixRetrieve extends Command
                 'text' => $text
             ];
 
-            $telegram_response = file_get_contents(env('COM_TELEGRAM')."/sendMessage?" . http_build_query($data) );
+            //$telegram_response = file_get_contents(env('COM_TELEGRAM')."/sendMessage?" . http_build_query($data) );
         }
 
         /*Telegram Update*/
@@ -568,6 +731,6 @@ class JupixRetrieve extends Command
             'text' => $text
         ];
 
-        $telegram_response = file_get_contents(env('COM_TELEGRAM')."/sendMessage?" . http_build_query($data) );
+        //$telegram_response = file_get_contents(env('COM_TELEGRAM')."/sendMessage?" . http_build_query($data) );
     }
 }

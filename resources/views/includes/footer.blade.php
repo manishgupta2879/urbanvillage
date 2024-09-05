@@ -141,7 +141,7 @@
                                 <p>
                                     Urban Village is a trading name of Urban Village Homes Limited</p>
                                 <p>Registered address: 121 Denmark Hill, London SE5 8EN <br> Telephone: 02035199121 |  Email: info@urbanvillagehomes.com </p>
-                                <p>Company registration number:09523009 registered in England and Wales | VAT no. 211 010 205
+                                <p>Company registration number: 09523009 registered in England and Wales | VAT no. 211 010 205
                                 </p>
                                 <!-- Registered address: 121 Denmark Hill, London SE5 8EN Telephone: 02035199121 | Email: info@urbanvillagehomes.com  -->
                             </div>

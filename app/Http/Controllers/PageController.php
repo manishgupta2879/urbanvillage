@@ -20,21 +20,23 @@ class PageController extends Controller
             ->orderBy('created_at', 'desc')
             ->take(4)
             ->get();
-            
+
         //set withdrawn id
         $withdrawn = array(6, 7);
 
         //latest featured properties
-        $properties = Property::select('id', 'propertyID', 'department', 'displayAddress', 'propertyBedrooms', 'propertyType', 'propertyStyle', 'price', 'rent', 'rentFrequency', 'availability')
+        $properties = Property::select('id', 'propertyID', 'department', 'displayAddress', 'propertyBedrooms', 'propertyType', 'propertyStyle', 'price', 'rent', 'rentFrequency', 'availability','images')
             ->where('status', 1)
-            ->where('featuredProperty', 1)
+            // ->where('featuredProperty', 1)
             ->whereNotIn('availability', $withdrawn)
             ->orderBy('price', 'DESC')
+            ->take(6)
             ->get();
 
         //add the one image to the property array
         foreach ($properties AS $k => $property){
             //Create slug and assign to the property
+            $slug_text = '';
             if(isset($property['displayAddress'])){
                 $slug_text = $property['displayAddress'];
             }elseif(isset($property['address2'])){
@@ -53,7 +55,12 @@ class PageController extends Controller
                 ->orderBy('sort_order')
                 ->first();
 
-            $properties[$k]['image'] = $resource['path'];
+            $jsonString = $properties[$k]['images'];
+            $imagesArray = json_decode($jsonString, true);
+
+            $properties[$k]['image'] = $imagesArray[0]['image'];
+            
+
 
             //get property type
             $resource_type = PropertyType::select('type')
@@ -82,6 +89,8 @@ class PageController extends Controller
             }
         }
 
+        //dd($properties);
+
         return view('pages.index',
             [
                 'page_title'    => 'Estate Agents and Letting Agents in Camberwell, Brixton, SE5',
@@ -108,12 +117,12 @@ class PageController extends Controller
                 $property['displayAddress'] = $property['propertyFeature1'];
             }
         }
-        
+
         // get virtual tour link if available
         if(isset($property['virtualTours'])){
             $property['virtualTours'] = json_decode($property['virtualTours']);
         }
-        
+
         // get external links if available
         if(isset($property['externalLinks'])){
             $property['externalLinks'] = json_decode($property['externalLinks']);
@@ -140,8 +149,18 @@ class PageController extends Controller
                 $brochures[] = base64_encode($resource['path']);
             }
         }
+        $propertyimages = [];
+        $propertyimagesraw = json_decode( $property['images'],true);
+        
+        foreach ($propertyimagesraw as &$item) {
+            
+            if (isset($item['image'])) {
+                $propertyimages[] = $item['image'];
+            }
+        }
+       
 
-        $property['images'] = $images;
+        $property['images'] = $propertyimages;
         $property['floorplans'] = $floorplans;
         $property['epcGraphs'] = $epcGraphs;
         $property['brochures'] = $brochures;
@@ -171,7 +190,7 @@ class PageController extends Controller
                 ->first();
             $property['rentFrequency'] = $rent_type['frequency_type'];
         }
-
+        //dd($property['images']);
         return view('pages.property_single',
             [
                 'page_title'    => $property['displayAddress'],
@@ -187,7 +206,7 @@ class PageController extends Controller
         $js_files   = array('single','slider');
 
         $property_id = $request->profileID;
-        
+
         //latest featured properties
         $property = Property::where('status', 1)
             ->where('propertyID', $property_id)
@@ -201,12 +220,12 @@ class PageController extends Controller
                 $property['displayAddress'] = $property['propertyFeature1'];
             }
         }
-        
+
         // get virtual tour link if available
         if(isset($property['virtualTours'])){
             $property['virtualTours'] = json_decode($property['virtualTours']);
         }
-        
+
         // get external links if available
         if(isset($property['externalLinks'])){
             $property['externalLinks'] = json_decode($property['externalLinks']);
@@ -235,6 +254,7 @@ class PageController extends Controller
         }
 
         $property['images'] = $images;
+        
         $property['floorplans'] = $floorplans;
         $property['epcGraphs'] = $epcGraphs;
         $property['brochures'] = $brochures;
@@ -278,7 +298,7 @@ class PageController extends Controller
     {
         $css_files  = array('about','listings','listings_responsive');
         $js_files   = array('listings', 'property_search');
-        
+
         //set withdrawn id
         $withdrawn = array(6, 7);
         //set sol/ sold stc/ let/ let agreed id
@@ -457,7 +477,14 @@ class PageController extends Controller
                  ->orderBy('sort_order')
                  ->first();
 
-             $properties_final[$k]['image'] = $resource['path'];
+             //$properties_final[$k]['image'] = $resource['path'];
+
+             $jsonString = $properties_final[$k]['images'];
+            $imagesArray = json_decode($jsonString, true);
+
+            $properties_final[$k]['image'] = $imagesArray[0]['image'];
+
+             //dd($properties_final[$k]['image']);
 
              //get property type
              $resource_type = PropertyType::select('type')
@@ -509,12 +536,12 @@ class PageController extends Controller
                  'include_current'        => $request['include_current'],
              ]);
     }
-    
+
     public function life_magazines(Request $request)
     {
         $css_files  = array('about','listings','listings_responsive');
         $js_files   = array('listings', 'property_search');
-        
+
 
         //Get all life magazines
         $lifeMagazines = new LifeMagazine();
@@ -534,12 +561,12 @@ class PageController extends Controller
 
     public function new_aboutus(Request $request)
     {
-       
-        
+
+
          return view('pages.new_aboutus_view',
              [
                  'page_title'    => 'About us',
-                 
+
              ]);
     }
 
@@ -1353,8 +1380,8 @@ class PageController extends Controller
                 'js_files'      => $js_files
             ]);
     }
-    
-    
+
+
 
     public function show_complaints_procedure()
     {

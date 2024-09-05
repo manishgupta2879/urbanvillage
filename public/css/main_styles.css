@@ -1000,11 +1000,12 @@ section
 	height: 37px;
 	padding-left: 27px;
 	padding-right: 26px;
-	background: #a5036a;
+	background: #E00069;
 	line-height: 37px;
 	font-size: 16px;
 	font-weight: 500;
 	color: #ffffff;
+	border-radius: 32px;
 }
 .listing_price
 {

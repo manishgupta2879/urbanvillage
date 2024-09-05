@@ -4,6 +4,8 @@
 </div>-->
 
 <div class="listing_container">
+
+   
     <div class="container">
         <div class="row" >
             <div class="col">
@@ -32,7 +34,7 @@
                     @foreach($property->images AS $k => $image)
                         <div class="mySlides">
                             <div class="numbertext">{{ $k+1 }} / {{ count($property->images) }}</div>
-                            <img src="{{ Voyager::image($image) }}" style="width:100%" alt="Urban Village Home - {{ $property->displayAddress }} : Image {{ $k+1 }}">
+                            <img src="{{ $image }}" style="width:100%" alt="Urban Village Home - {{ $property->displayAddress }}  : Image {{ $k+1 }}">
                             <div class="text">UVH - {{ $property->displayAddress }} : {{ $k+1 }}</div>
                         </div>
                     @endforeach

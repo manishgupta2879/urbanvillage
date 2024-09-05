@@ -20,11 +20,11 @@
             <div class="col-lg-2">
                 <div class="sp-mk"></div>
             </div>
-            <div class="col-lg-5 move_up_top">
+            {{-- <div class="col-lg-5 move_up_top">
                 <div class="intro_content">
                     <a href="{{ url('stamp-duty-calculator') }}" class="btn cus-btn" style="color:white;">Stamp Duty Calculator</a>
                 </div>
-            </div>
+            </div> --}}
             <div class="col-md-6">
                 <div class="sp-mk"></div>
             </div>

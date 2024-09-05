@@ -1,5 +1,5 @@
 @include('includes.header')
-
+<link rel="stylesheet" href="{{ asset('css/new_aboutus.css') }}">
 <div class="center-position center-position-phone" style="margin-top:0px !important;">
     <div class="row move_up-btn move_up-btn-cus">
         <div class="col-md-12">
