@@ -13,7 +13,7 @@
         /* Use the color from the image */
         color: white;
         /* Text color */
-        padding: 10px 20px;
+        padding: 10px 18px;
         /* Adjust padding to match the look */
         border-radius: 25px;
         /* Rounded corners */
@@ -29,6 +29,8 @@
         /* Remove underline from link */
         transition: background-color 0.3s ease;
         /* Smooth hover effect */
+        width: 255px;
+        font-size: 20px;
     }
 
     .custom-btn:hover {
@@ -358,14 +360,14 @@
             </div>
 
             <!-- card-carousel -->
-            <div class="container-fluid card-carousel">
+            <div class="container-fluid card-carousel mt-5">
                 <div class="row">
                     <h2 class="m-auto">Properties we’ve let</h2>
                     <div class="col-md-12 mt-3">
                         <div id="news-slider" class="owl-carousel owl-loaded owl-drag">
                             <div class="owl-stage-outer">
-                                <div class="owl-stage" style="transform: translate3d(-2540px, 0px, 0px); transition: 0.25s; width: 10161px;">
-                                    <div class="owl-item cloned" style="width: 836.667px; margin-right: 10px;">
+                                <div class="owl-stage">
+                                    <div class="owl-item cloned">
                                         <div class="post-slide">
                                             <div class="post-img">
                                                 <img src="http://127.0.0.1:8000/images/kitchen.jpg" alt="">
@@ -378,7 +380,7 @@
                                             </div>
                                         </div>
                                     </div>
-                                    <div class="owl-item cloned" style="width: 836.667px; margin-right: 10px;">
+                                    <div class="owl-item cloned">
                                         <div class="post-slide">
                                             <div class="post-img">
                                                 <img src="http://127.0.0.1:8000/images/kitchen.jpg" alt="">
@@ -391,7 +393,7 @@
                                             </div>
                                         </div>
                                     </div>
-                                    <div class="owl-item cloned" style="width: 836.667px; margin-right: 10px;">
+                                    <div class="owl-item cloned">
                                         <div class="post-slide">
                                             <div class="post-img">
                                                 <img src="http://127.0.0.1:8000/images/kitchen.jpg" alt="">
@@ -404,7 +406,7 @@
                                             </div>
                                         </div>
                                     </div>
-                                    <div class="owl-item active" style="width: 836.667px; margin-right: 10px;">
+                                    <div class="owl-item active">
                                         <div class="post-slide">
                                             <div class="post-img">
                                                 <img src="http://127.0.0.1:8000/images/kitchen.jpg" alt="">
@@ -417,7 +419,7 @@
                                             </div>
                                         </div>
                                     </div>
-                                    <div class="owl-item active" style="width: 836.667px; margin-right: 10px;">
+                                    <div class="owl-item active">
                                         <div class="post-slide">
                                             <div class="post-img">
                                                 <img src="http://127.0.0.1:8000/images/kitchen.jpg" alt="">
@@ -430,7 +432,7 @@
                                             </div>
                                         </div>
                                     </div>
-                                    <div class="owl-item active" style="width: 836.667px; margin-right: 10px;">
+                                    <div class="owl-item active">
                                         <div class="post-slide">
                                             <div class="post-img">
                                                 <img src="http://127.0.0.1:8000/images/kitchen.jpg" alt="">
@@ -443,7 +445,7 @@
                                             </div>
                                         </div>
                                     </div>
-                                    <div class="owl-item" style="width: 836.667px; margin-right: 10px;">
+                                    <div class="owl-item">
                                         <div class="post-slide">
                                             <div class="post-img">
                                                 <img src="http://127.0.0.1:8000/images/kitchen.jpg" alt="">
@@ -456,7 +458,7 @@
                                             </div>
                                         </div>
                                     </div>
-                                    <div class="owl-item" style="width: 836.667px; margin-right: 10px;">
+                                    <div class="owl-item">
                                         <div class="post-slide">
                                             <div class="post-img">
                                                 <img src="http://127.0.0.1:8000/images/kitchen.jpg" alt="">
@@ -469,7 +471,7 @@
                                             </div>
                                         </div>
                                     </div>
-                                    <div class="owl-item" style="width: 836.667px; margin-right: 10px;">
+                                    <div class="owl-item">
                                         <div class="post-slide">
                                             <div class="post-img">
                                                 <img src="http://127.0.0.1:8000/images/kitchen.jpg" alt="">
@@ -482,7 +484,7 @@
                                             </div>
                                         </div>
                                     </div>
-                                    <div class="owl-item cloned" style="width: 836.667px; margin-right: 10px;">
+                                    <div class="owl-item cloned">
                                         <div class="post-slide">
                                             <div class="post-img">
                                                 <img src="http://127.0.0.1:8000/images/kitchen.jpg" alt="">
@@ -495,7 +497,7 @@
                                             </div>
                                         </div>
                                     </div>
-                                    <div class="owl-item cloned" style="width: 836.667px; margin-right: 10px;">
+                                    <div class="owl-item cloned">
                                         <div class="post-slide">
                                             <div class="post-img">
                                                 <img src="http://127.0.0.1:8000/images/kitchen.jpg" alt="">
@@ -508,7 +510,7 @@
                                             </div>
                                         </div>
                                     </div>
-                                    <div class="owl-item cloned" style="width: 836.667px; margin-right: 10px;">
+                                    <div class="owl-item cloned">
                                         <div class="post-slide">
                                             <div class="post-img">
                                                 <img src="http://127.0.0.1:8000/images/kitchen.jpg" alt="">
@@ -530,7 +532,6 @@
                         </div>
                     </div>
                 </div>
-                <!-- <div data-v-90132dd2="" class="ruk-icon-arrow-right-thin-1-01 green-chevron"> <img src="{{ asset('images/icons/green-chevron.png') }}"></div> -->
             </div>
 
             <!-- Urvan-villages -->
@@ -770,25 +771,45 @@
 </div>
 <script>
     $(document).ready(function() {
+        // var owl = $('#news-slider').owlCarousel({
+        //     loop: true,
+        //     margin: 10,
+        //     nav: false,
+        //     autoplay: true,
+        //     autoplayHoverPause: true,
+        //     rewind: true,
+        //     responsive: {
+        //         0: {
+        //             items: 1
+        //         },
+        //         600: {
+        //             items: 2
+        //         },
+        //         1000: {
+        //             items: 3
+        //         }
+        //     }
+        // });
+
         var owl = $('#news-slider').owlCarousel({
-            loop: true,
-            margin: 10,
-            nav: false,
-            autoplay: true,
-            autoplayHoverPause: true,
-            rewind: true,
-            responsive: {
-                0: {
-                    items: 1
-                },
-                600: {
-                    items: 2
-                },
-                1000: {
-                    items: 3
-                }
+        loop: true,
+        margin: 10,
+        nav: false,
+        autoplay: true,
+        autoplayHoverPause: true,
+        responsive: {
+            0: {
+                items: 1
+            },
+            600: {
+                items: 1
+            },
+            1000: {
+                items: 5
             }
-        });
+        }
+    });
+
         // Custom Next Button
         $('#customNext').click(function() {
             owl.trigger('next.owl.carousel');

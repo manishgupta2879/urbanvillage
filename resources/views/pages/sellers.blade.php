@@ -8,25 +8,29 @@
 </header>-->
 <style>
     body {
-    margin: 0;
-    font-family: Outfit;
-    background-color: #fff;
-}
+        margin: 0;
+        font-family: Outfit;
+        background-color: #fff;
+    }
 
-h1, h2, h3{
-    font-family: "DM Serif Display", serif;
-}
-p{
-    font-family: Outfit;
-}
+    h1,
+    h2,
+    h3 {
+        font-family: "DM Serif Display", serif;
+    }
+
+    p {
+        font-family: Outfit;
+    }
+
     .custom-btn {
-        background-color: #E00069  !important;
+        background-color: #E00069 !important;
         /* Use the color from the image */
         color: white;
         /* Text color */
-        padding: 10px 20px;
+        padding: 10px 18px;
         /* Adjust padding to match the look */
-        border-radius: 25px;
+        border-radius: 30px;
         /* Rounded corners */
         border: none;
         /* Remove any border */
@@ -40,6 +44,8 @@ p{
         /* Remove underline from link */
         transition: background-color 0.3s ease;
         /* Smooth hover effect */
+        width: 255px;
+        font-size: 20px;
     }
 
     .custom-btn:hover {
@@ -256,7 +262,7 @@ p{
         /* Positioning for icon */
     }
 
- 
+
 
     .consultation-button-container {
         text-align: start;
@@ -278,6 +284,22 @@ p{
     .consultation-btn:hover {
         background-color: #afb700c7;
         color: #fff;
+    }
+
+    .card-carousel #customNext {
+        position: absolute;
+        left: 48%;
+        background: transparent;
+        border: none;
+    }
+
+    button:focus {
+        outline: none !important;
+        outline: none !important;
+    }
+
+    .card-carousel #customNext img {
+        height: 54px !important;
     }
 </style>
 
@@ -307,79 +329,181 @@ p{
                 </div>
             </div>
             <!-- card-carousel -->
-            <div class="container-fluid card-carousel">
+            <div class="container-fluid card-carousel mt-5">
                 <div class="row">
-                            <h2 class="m-auto">Properties we’ve sold</h2>
+                    <h2 class="m-auto">Properties we’ve let</h2>
                     <div class="col-md-12 mt-3">
-                        <div id="news-slider" class="owl-carousel">
-                            <div class="post-slide">
-                                <div class="post-img">
-                                    <img src="http://127.0.0.1:8000/images/kitchen.jpg" alt="">
-                                    <a href="#" class="over-layer"><i class="fa fa-link"></i></a>
-                                </div>
-                                <div class="post-content">
-                                    <p class="post-description mb-0">
-                                    <span class="post-date">Road name, SE5</span></p>
+                        <div id="news-slider" class="owl-carousel owl-loaded owl-drag">
+                            <div class="owl-stage-outer">
+                                <div class="owl-stage">
+                                    <div class="owl-item cloned" >
+                                        <div class="post-slide">
+                                            <div class="post-img">
+                                                <img src="http://127.0.0.1:8000/images/kitchen.jpg" alt="">
+                                                <a href="#" class="over-layer"><i class="fa fa-link"></i></a>
+                                            </div>
+                                            <div class="post-content">
+                                                <p class="post-description mb-0">
+                                                    <span class="post-date">Road name, SE5</span>
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="owl-item cloned" >
+                                        <div class="post-slide">
+                                            <div class="post-img">
+                                                <img src="http://127.0.0.1:8000/images/kitchen.jpg" alt="">
+                                                <a href="#" class="over-layer"><i class="fa fa-link"></i></a>
+                                            </div>
+                                            <div class="post-content">
+                                                <p class="post-description mb-0">
+                                                    <span class="post-date">Road name, SE5</span>
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="owl-item cloned" >
+                                        <div class="post-slide">
+                                            <div class="post-img">
+                                                <img src="http://127.0.0.1:8000/images/kitchen.jpg" alt="">
+                                                <a href="#" class="over-layer"><i class="fa fa-link"></i></a>
+                                            </div>
+                                            <div class="post-content">
+                                                <p class="post-description mb-0">
+                                                    <span class="post-date">Road name, SE5</span>
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="owl-item active" >
+                                        <div class="post-slide">
+                                            <div class="post-img">
+                                                <img src="http://127.0.0.1:8000/images/kitchen.jpg" alt="">
+                                                <a href="#" class="over-layer"><i class="fa fa-link"></i></a>
+                                            </div>
+                                            <div class="post-content">
+                                                <p class="post-description mb-0">
+                                                    <span class="post-date">Road name, SE5</span>
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="owl-item active" >
+                                        <div class="post-slide">
+                                            <div class="post-img">
+                                                <img src="http://127.0.0.1:8000/images/kitchen.jpg" alt="">
+                                                <a href="#" class="over-layer"><i class="fa fa-link"></i></a>
+                                            </div>
+                                            <div class="post-content">
+                                                <p class="post-description mb-0">
+                                                    <span class="post-date">Road name, SE5</span>
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="owl-item active" >
+                                        <div class="post-slide">
+                                            <div class="post-img">
+                                                <img src="http://127.0.0.1:8000/images/kitchen.jpg" alt="">
+                                                <a href="#" class="over-layer"><i class="fa fa-link"></i></a>
+                                            </div>
+                                            <div class="post-content">
+                                                <p class="post-description mb-0">
+                                                    <span class="post-date">Road name, SE5</span>
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="owl-item" >
+                                        <div class="post-slide">
+                                            <div class="post-img">
+                                                <img src="http://127.0.0.1:8000/images/kitchen.jpg" alt="">
+                                                <a href="#" class="over-layer"><i class="fa fa-link"></i></a>
+                                            </div>
+                                            <div class="post-content">
+                                                <p class="post-description mb-0">
+                                                    <span class="post-date">Road name, SE5</span>
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="owl-item" >
+                                        <div class="post-slide">
+                                            <div class="post-img">
+                                                <img src="http://127.0.0.1:8000/images/kitchen.jpg" alt="">
+                                                <a href="#" class="over-layer"><i class="fa fa-link"></i></a>
+                                            </div>
+                                            <div class="post-content">
+                                                <p class="post-description mb-0">
+                                                    <span class="post-date">Road name, SE5</span>
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="owl-item" >
+                                        <div class="post-slide">
+                                            <div class="post-img">
+                                                <img src="http://127.0.0.1:8000/images/kitchen.jpg" alt="">
+                                                <a href="#" class="over-layer"><i class="fa fa-link"></i></a>
+                                            </div>
+                                            <div class="post-content">
+                                                <p class="post-description mb-0">
+                                                    <span class="post-date">Road name, SE5</span>
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="owl-item cloned" >
+                                        <div class="post-slide">
+                                            <div class="post-img">
+                                                <img src="http://127.0.0.1:8000/images/kitchen.jpg" alt="">
+                                                <a href="#" class="over-layer"><i class="fa fa-link"></i></a>
+                                            </div>
+                                            <div class="post-content">
+                                                <p class="post-description mb-0">
+                                                    <span class="post-date">Road name, SE5</span>
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="owl-item cloned" >
+                                        <div class="post-slide">
+                                            <div class="post-img">
+                                                <img src="http://127.0.0.1:8000/images/kitchen.jpg" alt="">
+                                                <a href="#" class="over-layer"><i class="fa fa-link"></i></a>
+                                            </div>
+                                            <div class="post-content">
+                                                <p class="post-description mb-0">
+                                                    <span class="post-date">Road name, SE5</span>
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="owl-item cloned" >
+                                        <div class="post-slide">
+                                            <div class="post-img">
+                                                <img src="http://127.0.0.1:8000/images/kitchen.jpg" alt="">
+                                                <a href="#" class="over-layer"><i class="fa fa-link"></i></a>
+                                            </div>
+                                            <div class="post-content">
+                                                <p class="post-description mb-0">
+                                                    <span class="post-date">Road name, SE5</span>
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </div>
                                 </div>
                             </div>
-                            <div class="post-slide">
-                                <div class="post-img">
-                                    <img src="http://127.0.0.1:8000/images/kitchen.jpg" alt="">
-                                    <a href="#" class="over-layer"><i class="fa fa-link"></i></a>
-                                </div>
-                                <div class="post-content">
-                                    <p class="post-description mb-0">
-                                    <span class="post-date">Road name, SE5</span></p>
-                                </div>
+                            <div id="customNav">
+                                <!-- <button id="customPrev">Previous</button> -->
+                                <button id="customNext"><img src="{{ asset('images/icons/green-chevron.png') }}"></button>
                             </div>
-                            <div class="post-slide">
-                                <div class="post-img">
-                                    <img src="http://127.0.0.1:8000/images/kitchen.jpg" alt="">
-                                    <a href="#" class="over-layer"><i class="fa fa-link"></i></a>
-                                </div>
-                                <div class="post-content">
-                                    <p class="post-description mb-0">
-                                    <span class="post-date">Road name, SE5</span></p>
-                                </div>
-                            </div>
-                            <div class="post-slide">
-                                <div class="post-img">
-                                    <img src="http://127.0.0.1:8000/images/kitchen.jpg" alt="">
-                                    <a href="#" class="over-layer"><i class="fa fa-link"></i></a>
-                                </div>
-                                <div class="post-content">
-                                    <p class="post-description mb-0">
-                                    <span class="post-date">Road name, SE5</span></p>
-                                </div>
-                            </div>
-                            <div class="post-slide">
-                                <div class="post-img">
-                                    <img src="http://127.0.0.1:8000/images/kitchen.jpg" alt="">
-                                    <a href="#" class="over-layer"><i class="fa fa-link"></i></a>
-                                </div>
-                                <div class="post-content">
-                                    <p class="post-description mb-0">
-                                    <span class="post-date">Road name, SE5</span></p>
-                                </div>
-                            </div>
-                            <div class="post-slide">
-                                <div class="post-img">
-                                    <img src="http://127.0.0.1:8000/images/kitchen.jpg" alt="">
-                                    <a href="#" class="over-layer"><i class="fa fa-link"></i></a>
-                                </div>
-                                <div class="post-content">
-                                    <p class="post-description mb-0">
-                                    <span class="post-date">Road name, SE5</span></p>
-                                </div>
-                            </div> 
-                                                     
                         </div>
                     </div>
                 </div>
-                <div data-v-90132dd2="" class="ruk-icon-arrow-right-thin-1-01 green-chevron">  <img src="{{ asset('images/icons/green-chevron.png') }}" ></div>
             </div>
-              
-           
+
+
             <div class="container Why-sell-section">
                 <div class="selling-section row">
                     <div class="selling-content col-12 col-lg-6">
@@ -393,7 +517,7 @@ p{
                     </div>
                     <div class="col-12 col-lg-6 p-0 px-lg-4 ">
                         <div class="selling-image">
-                        <img src="{{ asset('images/kitchen.jpg') }}" alt="Kitchen Image">
+                            <img src="{{ asset('images/kitchen.jpg') }}" alt="Kitchen Image">
                         </div>
                     </div>
                 </div>
@@ -465,19 +589,19 @@ p{
                             <ul>
                                 <ul class="d-flex mb-0">
                                     <img src="http://127.0.0.1:8000/images/about-us/logo.png" alt="">
-                                <li>Organising your home reduces stress</li>
+                                    <li>Organising your home reduces stress</li>
                                 </ul>
                                 <ul class="d-flex mb-0">
                                     <img src="http://127.0.0.1:8000/images/about-us/logo.png" alt="">
-                                <li>Selling unwanted items make you money</li>
+                                    <li>Selling unwanted items make you money</li>
                                 </ul>
                                 <ul class="d-flex mb-0">
                                     <img src="http://127.0.0.1:8000/images/about-us/logo.png" alt="">
-                                <li>Increases the value of your home</li>
+                                    <li>Increases the value of your home</li>
                                 </ul>
                                 <ul class="d-flex mb-0">
                                     <img src="http://127.0.0.1:8000/images/about-us/logo.png" alt="">
-                                <li>Decluttering creates valuable space</li>
+                                    <li>Decluttering creates valuable space</li>
                                 </ul>
                             </ul>
                             <div class="consultation-button-container">
@@ -514,7 +638,7 @@ p{
                         <div class="property-card-content">
                             <span class="category">HOME IMPROVEMENTS <span class="read-time">| 5 MINS READ</span></span>
                             <h3>7 ways to maximise your outdoor space</h3>
-                         
+
                             <div class="author mt-4 mt-lg-5">
                                 <img src="{{ asset('images/about-us/MaskGroup15.png') }}" alt="Suzanne Vincent">
                                 <span>Suzanne Vincent</span>
@@ -541,7 +665,7 @@ p{
                         <div class="property-card-content">
                             <span class="category">HOME IMPROVEMENTS <span class="read-time">| 5 MINS READ</span></span>
                             <h3>5 spring cleaning dos and don'ts</h3>
-                            
+
                             <div class="author mt-4 mt-lg-5">
                                 <img src="{{ asset('images/about-us/MaskGroup15.png') }}" alt="Suzanne Vincent">
                                 <span>Suzanne Vincent</span>
@@ -573,13 +697,13 @@ p{
                     </div>
                     <div class="custom-nav d-none d-lg-block">
                         <span class="custom-prev d-none d-md-block">
-                        <!-- <i class="fa-solid fa-chevron-left"></i> -->
-                        <img src="{{ asset('images/icons/left-chevron.png') }}" >
+                            <!-- <i class="fa-solid fa-chevron-left"></i> -->
+                            <img src="{{ asset('images/icons/left-chevron.png') }}">
                             <div data-v-90132dd2="" class="ruk-icon-arrow-left-thin-1-01"></div>
                         </span>
                         <span class="custom-next d-none d-md-block">
-                        <!-- <i class="fa-solid fa-chevron-right"></i> -->
-                        <img src="{{ asset('images/icons/right-chevron.png') }}" >
+                            <!-- <i class="fa-solid fa-chevron-right"></i> -->
+                            <img src="{{ asset('images/icons/right-chevron.png') }}">
                             <div data-v-90132dd2="" class="ruk-icon-arrow-right-thin-1-01"></div>
                         </span>
                     </div>
@@ -592,6 +716,28 @@ p{
 </div>
 <script>
     $(document).ready(function() {
+        // var owl = $('#news-slider').owlCarousel({
+        //     loop: true,
+        //     margin: 10,
+        //     nav: false,
+        //     autoplay: true,
+        //     autoplayHoverPause: true,
+        //     rewind: true,
+        //     responsive: {
+        //         0: {
+        //             items: 1,
+        //             nav: false
+        //         },
+        //         600: {
+        //             items: 2,
+        //             nav: false
+        //         },
+        //         1000: {
+        //             items: 3,
+        //             loop: false
+        //         }
+        //     }
+        // });
         var owl = $('#news-slider').owlCarousel({
         loop: true,
         margin: 10,
@@ -603,13 +749,23 @@ p{
                 items: 1
             },
             600: {
-                items: 2
+                items: 1
             },
             1000: {
-                items: 3
+                items: 5
             }
         }
     });
+
+        // Custom Next Button
+        $('#customNext').click(function() {
+            owl.trigger('next.owl.carousel');
+        });
+
+        // Custom Previous Button
+        $('#customPrev').click(function() {
+            owl.trigger('prev.owl.carousel');
+        });
     });
 </script>
 

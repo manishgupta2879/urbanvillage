@@ -11,6 +11,9 @@ h2, h3{
     font-size: 35px !important;
     font-weight: 300 !important;
 }
+.container {
+    max-width: 1240px;
+}
 /* .is-sticky .main-header-area .classynav ul li a {
     color: #fff !important;
 } */
@@ -32,7 +35,7 @@ h2, h3{
 }
 .page-title-div {
     text-align: center;
-    font: normal normal normal 54px / 111px DM Serif Display;
+    font: normal normal normal 50px / 111px DM Serif Display;
     letter-spacing: 1.54px;
     color: #992785;
     opacity: 1;
@@ -48,11 +51,11 @@ opacity: 1;
 }
 .search-bar .Properties-for-sale{
     margin-top: -25px;
-    gap: 10px;
+    gap: 28px;
 }
 .search-bar .all-properties{
     text-decoration: none;
-    width: 256px;
+    width: 232px;
     height: 42px;
     background: #E00069 0% 0% no-repeat padding-box;
     border-radius: 37px;
@@ -60,14 +63,14 @@ opacity: 1;
 }
 .search-bar .all-properties a{
     text-decoration: none;
-    font-size:19px !important;
+    font-size:17px !important;
     font-weight: 700;
     letter-spacing: 0px;
     color: #FFFFFF;
 }
 .search-bar form{
     gap: 12px;
-    margin: 35px 25px 25px 25px;
+    margin: 20px 25px 20px 25px ;
 }
 .search-bar .enter-location{
     margin-top: -46px;
@@ -91,11 +94,11 @@ opacity: 1;
 border: 1px solid #992785;
 border-radius: 10px;
 opacity: 1;
-height: 67px;
+height: 52px;
 }
 .search-bar button{
-width: 280px;
-height: 67px;
+width: 270px;
+height: 52px;
 background: #AFB700 0% 0% no-repeat padding-box;
 border: 1px solid #AFB700;
 border-radius: 10px;
@@ -104,8 +107,8 @@ gap: 10px;
 font-size: 22px;
 }
 .search-bar .form-group{
-    width: 220px;
-height: 67px;
+    width: 126px;
+height: 52px;
 background: #FFFFFF 0% 0% no-repeat padding-box;
 border: 1px solid #992785;
 border-radius: 10px;
@@ -132,7 +135,7 @@ opacity: 1;
     user-select: none;
     width: 100%;
     display: flex;
-    left: 70px;
+    left: 60px;
 }
 #buy + label {
     position: relative;
@@ -140,7 +143,7 @@ opacity: 1;
     user-select: none;
     /* width: 100%; */
     display: flex;
-    left: -22px;
+    left: 26px;
 }
 .form-group label{
     font-size: 22px;
@@ -150,10 +153,10 @@ opacity: 1;
 #html + label::before {
     content: '';
     position: absolute;
-    left: -58px;
+    left: -46px;
     left: 10;
-    width: 45px;
-    height: 45px;
+    width: 36px;
+    height: 36px;
     border: 1px solid #992785;
     border-radius: 10px;
     background: #FFFFFF 0% 0% no-repeat padding-box;
@@ -162,10 +165,10 @@ opacity: 1;
 #buy + label::before {
     content: '';
     position: absolute;
-    left: -58px;
+    left: -45px;
     left: 10;
-    width: 45px;
-    height: 45px;
+    width: 36px;
+    height: 36px;
     border: 1px solid #992785;
     border-radius: 10px;
     background: #FFFFFF 0% 0% no-repeat padding-box;
@@ -183,18 +186,18 @@ opacity: 1;
 #html:checked + label::after {
     content: '✔';
     position: absolute;
-    left: -47px;
-    top: -5px;
+    left: -38px;
+    top: -2px;
     color: #992785;
-    font-size: 28px;
+    font-size: 25px;
 }
 #buy:checked + label::after {
     content: '✔';
     position: absolute;
-    left: -47px;
-    top: -5px;
+    left: -37px;
+    top: -2px;
     color: #992785;
-    font-size: 28px;
+    font-size: 25px;
 }
 .listing {
     background: #ffffff;
@@ -253,7 +256,7 @@ opacity: 1;
     align-items: center;
     background-color: white;
     border-radius: 10px;
-    padding: 56px !important;
+    padding: 70px !important;
     box-shadow: 0 4px 35px rgba(0, 0, 0, 0.1) !important;
     border: 1px solid #C6BEC4;
     margin: 20px 0;
@@ -335,6 +338,10 @@ opacity: 1;
 .search-bar .form-control::placeholder{
     font: normal normal normal 16px Outfit;
 }
+.search-bar .Properties-for-sale {
+    margin-top: -25px;
+    gap: 5px;
+}
 .search-bar .all-properties a{
     text-decoration: none;
     font-size: 12px !important;
@@ -363,6 +370,26 @@ opacity: 1;
 .work-with-us-section {
     padding: 30px !important;
 }
+#html:checked + label::after {
+    left: -37px;
+    top: -7px;
+}
+#buy + label::before {
+    content: '';
+    position: absolute;
+    left: -55px;
+    left: 10;
+    width: 36px;
+    height: 36px;
+    border: 1px solid #992785;
+    border-radius: 10px;
+    background: #FFFFFF 0% 0% no-repeat padding-box;
+    transition: background-color 0.3s, border-color 0.3s;
+}
+#buy:checked + label::after {
+    left: -47px;
+    top: -7px;
+}
     
 }
 
@@ -378,19 +405,19 @@ opacity: 1;
     color: #fff;
 }
 .page-title-div{
-    margin-top: 5%;
+    margin-top: 4%;
 }
 .card-carousel{
     margin-top: 7%;
 }
 .card-carousel h2{
     color: #A22D6C;
-    font-size: 24px;
+    font-size: 30px !important;
     margin-bottom: 15px;
 }
 .page-subtitle-div {
     text-align: center;
-    font: normal normal 300 34px / 111px Outfit;
+    font: normal normal 300 30px / 111px Outfit;
     letter-spacing: 0.89px;
     color: #000000;
     opacity: 1;
