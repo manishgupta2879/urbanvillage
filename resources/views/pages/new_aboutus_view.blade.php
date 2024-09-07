@@ -104,8 +104,8 @@
 
         </div>
     </section>
-   
-    
+
+
     <!-- Reviews Section -->
     <div class="reviews-section container-fluid">
         <h2>See what our customers say</h2>
@@ -154,7 +154,7 @@
             <div data-v-90132dd2="" class="ruk-icon-arrow-right-thin-1-01 green-chevron">  <img src="{{ asset('images/icons/green-chevron.png') }}" ></div>
         </div>
     </div>
-  
+
 
     <!-- Our work in the community -->
     <div class="reviews-section container-fluid our-community">
@@ -163,15 +163,15 @@
            <div class="col-6" style="display: contents;">
            <iframe width="100%" height="591" class=" set-phone-height" src="https://player.vimeo.com/video/328369211"  frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
            </div>
-           
+
         </div>
     </div>
-  
+
 
 
     <!-- Book a free valuation -->
     <section class="our-story position-relative my-2 my-lg-5 valuation position-relative">
-        <img src="http://127.0.0.1:8000/images/about-us/logo.png" alt="">
+        <img src="{{ asset('images/about-us/logo.png')  }}" alt="">
         <h2 class="text-white position-relative">Book a free valuation</h2>
         <div class="body-component text-center mx-0">
             <p>

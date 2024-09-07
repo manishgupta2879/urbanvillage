@@ -370,7 +370,7 @@
                                     <div class="owl-item cloned">
                                         <div class="post-slide">
                                             <div class="post-img">
-                                                <img src="/images/kitchen.jpg" alt="">
+                                                <img src="{{ asset('images/kitchen.jpg') }}" alt="">
                                                 <a href="#" class="over-layer"><i class="fa fa-link"></i></a>
                                             </div>
                                             <div class="post-content">
@@ -383,7 +383,7 @@
                                     <div class="owl-item cloned">
                                         <div class="post-slide">
                                             <div class="post-img">
-                                                <img src="/images/kitchen.jpg" alt="">
+                                                <img src="{{ asset('images/kitchen.jpg') }}" alt="">
                                                 <a href="#" class="over-layer"><i class="fa fa-link"></i></a>
                                             </div>
                                             <div class="post-content">
@@ -396,7 +396,7 @@
                                     <div class="owl-item cloned">
                                         <div class="post-slide">
                                             <div class="post-img">
-                                                <img src="/images/kitchen.jpg" alt="">
+                                                <img src="{{ asset('images/kitchen.jpg') }}" alt="">
                                                 <a href="#" class="over-layer"><i class="fa fa-link"></i></a>
                                             </div>
                                             <div class="post-content">
@@ -409,7 +409,7 @@
                                     <div class="owl-item active">
                                         <div class="post-slide">
                                             <div class="post-img">
-                                                <img src="/images/kitchen.jpg" alt="">
+                                                <img src="{{ asset('images/kitchen.jpg') }}" alt="">
                                                 <a href="#" class="over-layer"><i class="fa fa-link"></i></a>
                                             </div>
                                             <div class="post-content">
@@ -422,7 +422,7 @@
                                     <div class="owl-item active">
                                         <div class="post-slide">
                                             <div class="post-img">
-                                                <img src="/images/kitchen.jpg" alt="">
+                                                <img src="{{ asset('images/kitchen.jpg') }}" alt="">
                                                 <a href="#" class="over-layer"><i class="fa fa-link"></i></a>
                                             </div>
                                             <div class="post-content">
@@ -435,7 +435,7 @@
                                     <div class="owl-item active">
                                         <div class="post-slide">
                                             <div class="post-img">
-                                                <img src="/images/kitchen.jpg" alt="">
+                                                <img src="{{ asset('images/kitchen.jpg') }}" alt="">
                                                 <a href="#" class="over-layer"><i class="fa fa-link"></i></a>
                                             </div>
                                             <div class="post-content">
@@ -448,7 +448,7 @@
                                     <div class="owl-item">
                                         <div class="post-slide">
                                             <div class="post-img">
-                                                <img src="/images/kitchen.jpg" alt="">
+                                                <img src="{{ asset('images/kitchen.jpg') }}" alt="">
                                                 <a href="#" class="over-layer"><i class="fa fa-link"></i></a>
                                             </div>
                                             <div class="post-content">
@@ -461,7 +461,7 @@
                                     <div class="owl-item">
                                         <div class="post-slide">
                                             <div class="post-img">
-                                                <img src="/images/kitchen.jpg" alt="">
+                                                <img src="{{ asset('images/kitchen.jpg') }}" alt="">
                                                 <a href="#" class="over-layer"><i class="fa fa-link"></i></a>
                                             </div>
                                             <div class="post-content">
@@ -474,7 +474,7 @@
                                     <div class="owl-item">
                                         <div class="post-slide">
                                             <div class="post-img">
-                                                <img src="/images/kitchen.jpg" alt="">
+                                                <img src="{{ asset('images/kitchen.jpg') }}" alt="">
                                                 <a href="#" class="over-layer"><i class="fa fa-link"></i></a>
                                             </div>
                                             <div class="post-content">
@@ -487,7 +487,7 @@
                                     <div class="owl-item cloned">
                                         <div class="post-slide">
                                             <div class="post-img">
-                                                <img src="/images/kitchen.jpg" alt="">
+                                                <img src="{{ asset('images/kitchen.jpg') }}" alt="">
                                                 <a href="#" class="over-layer"><i class="fa fa-link"></i></a>
                                             </div>
                                             <div class="post-content">
@@ -500,7 +500,7 @@
                                     <div class="owl-item cloned">
                                         <div class="post-slide">
                                             <div class="post-img">
-                                                <img src="/images/kitchen.jpg" alt="">
+                                                <img src="{{ asset('images/kitchen.jpg') }}" alt="">
                                                 <a href="#" class="over-layer"><i class="fa fa-link"></i></a>
                                             </div>
                                             <div class="post-content">
@@ -513,7 +513,7 @@
                                     <div class="owl-item cloned">
                                         <div class="post-slide">
                                             <div class="post-img">
-                                                <img src="/images/kitchen.jpg" alt="">
+                                                <img src="{{ asset('images/kitchen.jpg') }}" alt="">
                                                 <a href="#" class="over-layer"><i class="fa fa-link"></i></a>
                                             </div>
                                             <div class="post-content">
@@ -560,12 +560,12 @@
                         <div class="row">
                             <!-- <div class="col-12 col-lg-6 text-center pt-5 pt-lg-0">
                         <div class="consultation-image">
-                            <img src="/images/logo.jpg" alt="Urban Village Logo">
+                            <img src="{{ asset('images/logo.jpg') }}" alt="Urban Village Logo">
                         </div>
                     </div> -->
                             <div class="col-12 col-lg-6  d-flex justify-content-lg-center pt-lg-3">
                                 <div class="accommodation home-accommodation">
-                                    <video id="myVideo" poster="/images/about-us/logo_poster.jpg" width="100%" height="">
+                                    <video id="myVideo" poster="{{ asset('images/about-us/logo_poster.jpg') }}" width="100%" height="">
                                         <source src="We love estate agency - Estate Agency In London.mp4" type="video/mp4">
                                     </video>
                                 </div>
@@ -575,22 +575,22 @@
                                     <h2>A stress-free letting experience</h2>
                                     <p>Choosing to let with Urban Village gives you access to a whole host of benefits and support as you navigate the lettings experience, including:</p>
                                     <ul>
-                                        <ul class="d-flex"><img src="/images/about-us/logo.png" alt="">
+                                        <ul class="d-flex"><img src="{{ asset('images/about-us/logo.png') }}" alt="">
                                             <li> Our 24/7 client care portal, giving you peace of mind and control throughout the tenancy</li>
                                         </ul>
-                                        <ul class="d-flex"><img src="/images/about-us/logo.png" alt="">
+                                        <ul class="d-flex"><img src="{{ asset('images/about-us/logo.png') }}" alt="">
                                             <li> Highly trusted contractor partners</li>
                                         </ul>
-                                        <ul class="d-flex"><img src="/images/about-us/logo.png" alt="">
+                                        <ul class="d-flex"><img src="{{ asset('images/about-us/logo.png') }}" alt="">
                                             <li> Pre-qualification and detailed referencing to find the best tenants </li>
                                         </ul>
-                                        <ul class="d-flex"><img src="/images/about-us/logo.png" alt="">
+                                        <ul class="d-flex"><img src="{{ asset('images/about-us/logo.png') }}" alt="">
                                             <li> A highly experienced, in-house property manager to ensure your property is well looked after</li>
                                         </ul>
-                                        <ul class="d-flex"><img src="/images/about-us/logo.png" alt="">
+                                        <ul class="d-flex"><img src="{{ asset('images/about-us/logo.png') }}" alt="">
                                             <li> Completely transparent, fair fees with no inflated prices on repairs or maintenance </li>
                                         </ul>
-                                        <ul class="d-flex"><img src="/images/about-us/logo.png" alt="">
+                                        <ul class="d-flex"><img src="{{ asset('images/about-us/logo.png') }}" alt="">
                                             <li> Our team visit, in person every six months rather than delegating to a third party, so we genuinely know the property!</li>
                                         </ul>
                                     </ul>
@@ -615,7 +615,7 @@
 
                         <div class="service-buttons">
                             <a href="#" class="btn service-btn">BOOK A VALUATION</a>
-                            <a href="#" class="btn service-btn whatsapp"> <img src="/images/icons/whatsapp.png" alt="whatsapp"></a>
+                            <a href="#" class="btn service-btn whatsapp"> <img src="{{ asset('images/icons/whatsapp.png') }}" alt="whatsapp"></a>
                         </div>
                     </div>
 
@@ -626,7 +626,7 @@
                         <p><strong>10% including VAT for our standard 12-month tenancy. No automatic renewal fees charged, which is a unique benefit with Urban Village.</strong></p>
                         <div class="service-buttons">
                             <a href="#" class="btn service-btn">Book a Valuation</a>
-                            <a href="#" class="btn service-btn whatsapp"><img src="/images/icons/whatsapp.png" alt="whatsapp"></a>
+                            <a href="#" class="btn service-btn whatsapp"><img src="{{ asset('images/icons/whatsapp.png') }}" alt="whatsapp"></a>
                         </div>
                     </div>
                 </div>
@@ -684,50 +684,28 @@
                 </div>
             </div>
 
-            <div class="property-market-section landlord-property-market container pt-0">
+            <div class="property-market-section container">
                 <h2>What's happening in the property market?</h2>
                 <div class="property-market-container pt-4">
-                    <div class="property-card">
-                        <!-- <img src="path_to_image1.png" alt="7 ways to maximise your outdoor space"> -->
-                        <img src="{{ asset('images/about-us/urban-villlage-one.png') }}" alt="Suzanne Vincent" class="profile-image">
-                        <div class="property-card-content">
-                            <span class="category">HOME IMPROVEMENTS <span class="read-time">| 5 MINS READ</span></span>
-                            <h3>7 ways to maximise your outdoor space</h3>
-                            <br>
-                            <div class="author">
-                                <img src="{{ asset('images/about-us/MaskGroup15.png') }}" alt="Suzanne Vincent">
-                                <span>Suzanne Vincent</span>
-                                <a href="#" class="read-more">Read more...</a>
+                    @foreach($posts AS $k => $post)
+
+
+                        <div class="property-card">
+                            <!-- <img src="path_to_image1.png" alt="7 ways to maximise your outdoor space"> -->
+                            <img src="{{ Storage::url($post->image) }}" alt="Suzanne Vincent" class="profile-image">
+                            <div class="property-card-content">
+                                <span class="category">{{ $post->category->name }} <span class="read-time">| 5 MINS READ</span></span>
+                                <h3>{{$post->title }}</h3>
+                                <br>
+                                <div class="author">
+                                    {{-- <img src="{{ asset('images/about-us/MaskGroup15.png') }}" alt="Suzanne Vincent">
+                                    <span>Suzanne Vincent</span> --}}
+                                    <a href="{{ url('blog/view/'.$post->slug) }}" class="read-more">Read more...</a>
+                                </div>
                             </div>
                         </div>
-                    </div>
-                    <div class="property-card">
-                        <!-- <img src="path_to_image2.png" alt="The women etched in history: A tour of South London"> -->
-                        <img src="{{ asset('images/about-us/urban-village_two.png') }}" alt="Suzanne Vincent" class="profile-image">
-                        <div class="property-card-content">
-                            <span class="category">LOCAL AREA <span class="read-time">| 5 MINS READ</span></span>
-                            <h3>The women etched in history: A tour of South London</h3>
-                            <div class="author">
-                                <img src="{{ asset('images/about-us/MaskGroup15.png') }}" alt="Suzanne Vincent">
-                                <span>Suzanne Vincent</span>
-                                <a href="#" class="read-more">Read more...</a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="property-card">
-                        <!-- <img src="path_to_image3.png" alt="5 spring cleaning dos and don'ts"> -->
-                        <img src="{{ asset('images/about-us/urban-village_three.png') }}" alt="Suzanne Vincent" class="profile-image">
-                        <div class="property-card-content">
-                            <span class="category">HOME IMPROVEMENTS <span class="read-time">| 5 MINS READ</span></span>
-                            <h3>5 spring cleaning dos and don'ts</h3>
-                            <br>
-                            <div class="author">
-                                <img src="{{ asset('images/about-us/MaskGroup15.png') }}" alt="Suzanne Vincent">
-                                <span>Suzanne Vincent</span>
-                                <a href="#" class="read-more">Read more...</a>
-                            </div>
-                        </div>
-                    </div>
+                    @endforeach
+
                 </div>
             </div>
             <!-- carousel -->
