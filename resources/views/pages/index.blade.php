@@ -200,16 +200,16 @@
                                 {{ str_limit($property->displayAddress, $limit = 25, $end = '...') }}</a> -->
                             <div class="sold-cards">
                                 <p>
-                                    <b class="text-dark">£900,000</b>
+                                    <b class="text-dark">£{{$property->price}}</b>
                                     <br>
-                                    Crossthwaite Avenue, SE5
+                                    {!! str_limit($property->displayAddress, $limit = 25, $end = '...')?? '&nbsp;' !!}
                                 </p>
                                 <div class="d-flex justify-content-between align-items-center">
                                     <p class="">
-                                        Terraced
+                                        {{ $property->propertyStyle }}
                                     </p>
                                     <div class="d-flex justify-content-between" style="gap: 9px;">
-                                        <div class="d-flex align-items-center" style="gap: 4px; font-size: 14px">4<svg fill="#e228b3" height="16px" width="16px" version="1.1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 315.00 315.00" xmlns:xlink="http://www.w3.org/1999/xlink" enable-background="new 0 0 315 315" stroke="#e228b3" stroke-width="0.00315">
+                                        <div class="d-flex align-items-center" style="gap: 4px; font-size: 14px">{{$property->propertyBedrooms}}<svg fill="#e228b3" height="16px" width="16px" version="1.1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 315.00 315.00" xmlns:xlink="http://www.w3.org/1999/xlink" enable-background="new 0 0 315 315" stroke="#e228b3" stroke-width="0.00315">
                                                 <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
                                                 <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g>
                                                 <g id="SVGRepo_iconCarrier">
