@@ -370,7 +370,7 @@
                                     <div class="owl-item cloned">
                                         <div class="post-slide">
                                             <div class="post-img">
-                                                <img src="http://127.0.0.1:8000/images/kitchen.jpg" alt="">
+                                                <img src="/images/kitchen.jpg" alt="">
                                                 <a href="#" class="over-layer"><i class="fa fa-link"></i></a>
                                             </div>
                                             <div class="post-content">
@@ -383,7 +383,7 @@
                                     <div class="owl-item cloned">
                                         <div class="post-slide">
                                             <div class="post-img">
-                                                <img src="http://127.0.0.1:8000/images/kitchen.jpg" alt="">
+                                                <img src="/images/kitchen.jpg" alt="">
                                                 <a href="#" class="over-layer"><i class="fa fa-link"></i></a>
                                             </div>
                                             <div class="post-content">
@@ -396,7 +396,7 @@
                                     <div class="owl-item cloned">
                                         <div class="post-slide">
                                             <div class="post-img">
-                                                <img src="http://127.0.0.1:8000/images/kitchen.jpg" alt="">
+                                                <img src="/images/kitchen.jpg" alt="">
                                                 <a href="#" class="over-layer"><i class="fa fa-link"></i></a>
                                             </div>
                                             <div class="post-content">
@@ -409,7 +409,7 @@
                                     <div class="owl-item active">
                                         <div class="post-slide">
                                             <div class="post-img">
-                                                <img src="http://127.0.0.1:8000/images/kitchen.jpg" alt="">
+                                                <img src="/images/kitchen.jpg" alt="">
                                                 <a href="#" class="over-layer"><i class="fa fa-link"></i></a>
                                             </div>
                                             <div class="post-content">
@@ -422,7 +422,7 @@
                                     <div class="owl-item active">
                                         <div class="post-slide">
                                             <div class="post-img">
-                                                <img src="http://127.0.0.1:8000/images/kitchen.jpg" alt="">
+                                                <img src="/images/kitchen.jpg" alt="">
                                                 <a href="#" class="over-layer"><i class="fa fa-link"></i></a>
                                             </div>
                                             <div class="post-content">
@@ -435,7 +435,7 @@
                                     <div class="owl-item active">
                                         <div class="post-slide">
                                             <div class="post-img">
-                                                <img src="http://127.0.0.1:8000/images/kitchen.jpg" alt="">
+                                                <img src="/images/kitchen.jpg" alt="">
                                                 <a href="#" class="over-layer"><i class="fa fa-link"></i></a>
                                             </div>
                                             <div class="post-content">
@@ -448,7 +448,7 @@
                                     <div class="owl-item">
                                         <div class="post-slide">
                                             <div class="post-img">
-                                                <img src="http://127.0.0.1:8000/images/kitchen.jpg" alt="">
+                                                <img src="/images/kitchen.jpg" alt="">
                                                 <a href="#" class="over-layer"><i class="fa fa-link"></i></a>
                                             </div>
                                             <div class="post-content">
@@ -461,7 +461,7 @@
                                     <div class="owl-item">
                                         <div class="post-slide">
                                             <div class="post-img">
-                                                <img src="http://127.0.0.1:8000/images/kitchen.jpg" alt="">
+                                                <img src="/images/kitchen.jpg" alt="">
                                                 <a href="#" class="over-layer"><i class="fa fa-link"></i></a>
                                             </div>
                                             <div class="post-content">
@@ -474,7 +474,7 @@
                                     <div class="owl-item">
                                         <div class="post-slide">
                                             <div class="post-img">
-                                                <img src="http://127.0.0.1:8000/images/kitchen.jpg" alt="">
+                                                <img src="/images/kitchen.jpg" alt="">
                                                 <a href="#" class="over-layer"><i class="fa fa-link"></i></a>
                                             </div>
                                             <div class="post-content">
@@ -487,7 +487,7 @@
                                     <div class="owl-item cloned">
                                         <div class="post-slide">
                                             <div class="post-img">
-                                                <img src="http://127.0.0.1:8000/images/kitchen.jpg" alt="">
+                                                <img src="/images/kitchen.jpg" alt="">
                                                 <a href="#" class="over-layer"><i class="fa fa-link"></i></a>
                                             </div>
                                             <div class="post-content">
@@ -500,7 +500,7 @@
                                     <div class="owl-item cloned">
                                         <div class="post-slide">
                                             <div class="post-img">
-                                                <img src="http://127.0.0.1:8000/images/kitchen.jpg" alt="">
+                                                <img src="/images/kitchen.jpg" alt="">
                                                 <a href="#" class="over-layer"><i class="fa fa-link"></i></a>
                                             </div>
                                             <div class="post-content">
@@ -513,7 +513,7 @@
                                     <div class="owl-item cloned">
                                         <div class="post-slide">
                                             <div class="post-img">
-                                                <img src="http://127.0.0.1:8000/images/kitchen.jpg" alt="">
+                                                <img src="/images/kitchen.jpg" alt="">
                                                 <a href="#" class="over-layer"><i class="fa fa-link"></i></a>
                                             </div>
                                             <div class="post-content">
@@ -560,12 +560,12 @@
                         <div class="row">
                             <!-- <div class="col-12 col-lg-6 text-center pt-5 pt-lg-0">
                         <div class="consultation-image">
-                            <img src="http://127.0.0.1:8000/images/logo.jpg" alt="Urban Village Logo">
+                            <img src="/images/logo.jpg" alt="Urban Village Logo">
                         </div>
                     </div> -->
                             <div class="col-12 col-lg-6  d-flex justify-content-lg-center pt-lg-3">
                                 <div class="accommodation home-accommodation">
-                                    <video id="myVideo" poster="http://127.0.0.1:8000/images/about-us/logo_poster.jpg" width="100%" height="">
+                                    <video id="myVideo" poster="/images/about-us/logo_poster.jpg" width="100%" height="">
                                         <source src="We love estate agency - Estate Agency In London.mp4" type="video/mp4">
                                     </video>
                                 </div>
@@ -575,22 +575,22 @@
                                     <h2>A stress-free letting experience</h2>
                                     <p>Choosing to let with Urban Village gives you access to a whole host of benefits and support as you navigate the lettings experience, including:</p>
                                     <ul>
-                                        <ul class="d-flex"><img src="http://127.0.0.1:8000/images/about-us/logo.png" alt="">
+                                        <ul class="d-flex"><img src="/images/about-us/logo.png" alt="">
                                             <li> Our 24/7 client care portal, giving you peace of mind and control throughout the tenancy</li>
                                         </ul>
-                                        <ul class="d-flex"><img src="http://127.0.0.1:8000/images/about-us/logo.png" alt="">
+                                        <ul class="d-flex"><img src="/images/about-us/logo.png" alt="">
                                             <li> Highly trusted contractor partners</li>
                                         </ul>
-                                        <ul class="d-flex"><img src="http://127.0.0.1:8000/images/about-us/logo.png" alt="">
+                                        <ul class="d-flex"><img src="/images/about-us/logo.png" alt="">
                                             <li> Pre-qualification and detailed referencing to find the best tenants </li>
                                         </ul>
-                                        <ul class="d-flex"><img src="http://127.0.0.1:8000/images/about-us/logo.png" alt="">
+                                        <ul class="d-flex"><img src="/images/about-us/logo.png" alt="">
                                             <li> A highly experienced, in-house property manager to ensure your property is well looked after</li>
                                         </ul>
-                                        <ul class="d-flex"><img src="http://127.0.0.1:8000/images/about-us/logo.png" alt="">
+                                        <ul class="d-flex"><img src="/images/about-us/logo.png" alt="">
                                             <li> Completely transparent, fair fees with no inflated prices on repairs or maintenance </li>
                                         </ul>
-                                        <ul class="d-flex"><img src="http://127.0.0.1:8000/images/about-us/logo.png" alt="">
+                                        <ul class="d-flex"><img src="/images/about-us/logo.png" alt="">
                                             <li> Our team visit, in person every six months rather than delegating to a third party, so we genuinely know the property!</li>
                                         </ul>
                                     </ul>
@@ -615,7 +615,7 @@
 
                         <div class="service-buttons">
                             <a href="#" class="btn service-btn">BOOK A VALUATION</a>
-                            <a href="#" class="btn service-btn whatsapp"> <img src="http://127.0.0.1:8000/images/icons/whatsapp.png" alt="whatsapp"></a>
+                            <a href="#" class="btn service-btn whatsapp"> <img src="/images/icons/whatsapp.png" alt="whatsapp"></a>
                         </div>
                     </div>
 
@@ -626,7 +626,7 @@
                         <p><strong>10% including VAT for our standard 12-month tenancy. No automatic renewal fees charged, which is a unique benefit with Urban Village.</strong></p>
                         <div class="service-buttons">
                             <a href="#" class="btn service-btn">Book a Valuation</a>
-                            <a href="#" class="btn service-btn whatsapp"><img src="http://127.0.0.1:8000/images/icons/whatsapp.png" alt="whatsapp"></a>
+                            <a href="#" class="btn service-btn whatsapp"><img src="/images/icons/whatsapp.png" alt="whatsapp"></a>
                         </div>
                     </div>
                 </div>

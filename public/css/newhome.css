@@ -428,7 +428,7 @@ opacity: 1;
 .selling-content{
     background-color: white;
     border-radius: 10px;
-    padding: 22px 22px;
+    padding: 38px 22px;
     /* box-shadow: 0 0 8px rgba(0, 0, 0, 0.1); */
     margin: 20px 0;
     border: 1px solid #C6BEC4;
@@ -440,7 +440,7 @@ opacity: 1;
 .property-content{
     background-color: white;
     border-radius: 10px;
-    padding: 24px 24px;
+    padding: 70px 24px;
     /* box-shadow: 0 0 8px rgba(0, 0, 0, 0.1); */
     border: 1px solid #C6BEC4;
     margin: 20px 0;

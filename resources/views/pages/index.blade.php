@@ -258,16 +258,16 @@
                     <p>We don’t just work for you, we work with you. Partner with our team of experts to benefit from:</p>
                     <ul>
                         <ul class="d-flex mb-0">
-                              <img src="http://127.0.0.1:8000/images/about-us/logo.png" alt="">
+                              <img src="/images/about-us/logo.png" alt="">
                         <li>Unrivalled market knowledge and local expertise</li></ul>
                         <ul class="d-flex mb-0">
-                              <img src="http://127.0.0.1:8000/images/about-us/logo.png" alt="">
+                              <img src="/images/about-us/logo.png" alt="">
                         <li>Free professional photoshoot to showcase your property</li></ul>
                         <ul class="d-flex mb-0">
-                              <img src="http://127.0.0.1:8000/images/about-us/logo.png" alt="">
+                              <img src="/images/about-us/logo.png" alt="">
                         <li>Exceptional, dedicated customer service</li></ul>
                         <ul class="d-flex mb-0">
-                              <img src="http://127.0.0.1:8000/images/about-us/logo.png" alt="">
+                              <img src="/images/about-us/logo.png" alt="">
                         <li>Coverage on all major property websites</li>
                         </ul>
                     </ul>
@@ -278,7 +278,7 @@
                 <p>Suzanne is our very own estate agency guru. She first started in the industry in 1992 by complete accident, following a misunderstanding at a job interview. Little did she know that it would be the catalyst for a lifelong passion! Fast forward 33 years, and she set up her own independent estate agency, Urban Village, in 2015. Today, she’s all about delivering bespoke, trusted experiences for our clients, with fair and transparent fees and dedicated customer service. When she’s not wowing our clients, you’ll likely find her horse riding or walking her dog.</p>
             </div> -->
             <div class="col-12 col-md-6 p-0 px-lg-3">
-                <img src="http://127.0.0.1:8000/images/about-us/MaskGroup44.png" alt="" class="profile-image ms-3">
+                <img src="/images/about-us/MaskGroup44.png" alt="" class="profile-image ms-3">
             </div>
         </div>
     </div>

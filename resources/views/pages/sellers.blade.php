@@ -339,7 +339,7 @@
                                     <div class="owl-item cloned" >
                                         <div class="post-slide">
                                             <div class="post-img">
-                                                <img src="http://127.0.0.1:8000/images/kitchen.jpg" alt="">
+                                                <img src="/images/kitchen.jpg" alt="">
                                                 <a href="#" class="over-layer"><i class="fa fa-link"></i></a>
                                             </div>
                                             <div class="post-content">
@@ -352,7 +352,7 @@
                                     <div class="owl-item cloned" >
                                         <div class="post-slide">
                                             <div class="post-img">
-                                                <img src="http://127.0.0.1:8000/images/kitchen.jpg" alt="">
+                                                <img src="/images/kitchen.jpg" alt="">
                                                 <a href="#" class="over-layer"><i class="fa fa-link"></i></a>
                                             </div>
                                             <div class="post-content">
@@ -365,7 +365,7 @@
                                     <div class="owl-item cloned" >
                                         <div class="post-slide">
                                             <div class="post-img">
-                                                <img src="http://127.0.0.1:8000/images/kitchen.jpg" alt="">
+                                                <img src="/images/kitchen.jpg" alt="">
                                                 <a href="#" class="over-layer"><i class="fa fa-link"></i></a>
                                             </div>
                                             <div class="post-content">
@@ -378,7 +378,7 @@
                                     <div class="owl-item active" >
                                         <div class="post-slide">
                                             <div class="post-img">
-                                                <img src="http://127.0.0.1:8000/images/kitchen.jpg" alt="">
+                                                <img src="/images/kitchen.jpg" alt="">
                                                 <a href="#" class="over-layer"><i class="fa fa-link"></i></a>
                                             </div>
                                             <div class="post-content">
@@ -391,7 +391,7 @@
                                     <div class="owl-item active" >
                                         <div class="post-slide">
                                             <div class="post-img">
-                                                <img src="http://127.0.0.1:8000/images/kitchen.jpg" alt="">
+                                                <img src="/images/kitchen.jpg" alt="">
                                                 <a href="#" class="over-layer"><i class="fa fa-link"></i></a>
                                             </div>
                                             <div class="post-content">
@@ -404,7 +404,7 @@
                                     <div class="owl-item active" >
                                         <div class="post-slide">
                                             <div class="post-img">
-                                                <img src="http://127.0.0.1:8000/images/kitchen.jpg" alt="">
+                                                <img src="/images/kitchen.jpg" alt="">
                                                 <a href="#" class="over-layer"><i class="fa fa-link"></i></a>
                                             </div>
                                             <div class="post-content">
@@ -417,7 +417,7 @@
                                     <div class="owl-item" >
                                         <div class="post-slide">
                                             <div class="post-img">
-                                                <img src="http://127.0.0.1:8000/images/kitchen.jpg" alt="">
+                                                <img src="/images/kitchen.jpg" alt="">
                                                 <a href="#" class="over-layer"><i class="fa fa-link"></i></a>
                                             </div>
                                             <div class="post-content">
@@ -430,7 +430,7 @@
                                     <div class="owl-item" >
                                         <div class="post-slide">
                                             <div class="post-img">
-                                                <img src="http://127.0.0.1:8000/images/kitchen.jpg" alt="">
+                                                <img src="/images/kitchen.jpg" alt="">
                                                 <a href="#" class="over-layer"><i class="fa fa-link"></i></a>
                                             </div>
                                             <div class="post-content">
@@ -443,7 +443,7 @@
                                     <div class="owl-item" >
                                         <div class="post-slide">
                                             <div class="post-img">
-                                                <img src="http://127.0.0.1:8000/images/kitchen.jpg" alt="">
+                                                <img src="/images/kitchen.jpg" alt="">
                                                 <a href="#" class="over-layer"><i class="fa fa-link"></i></a>
                                             </div>
                                             <div class="post-content">
@@ -456,7 +456,7 @@
                                     <div class="owl-item cloned" >
                                         <div class="post-slide">
                                             <div class="post-img">
-                                                <img src="http://127.0.0.1:8000/images/kitchen.jpg" alt="">
+                                                <img src="/images/kitchen.jpg" alt="">
                                                 <a href="#" class="over-layer"><i class="fa fa-link"></i></a>
                                             </div>
                                             <div class="post-content">
@@ -469,7 +469,7 @@
                                     <div class="owl-item cloned" >
                                         <div class="post-slide">
                                             <div class="post-img">
-                                                <img src="http://127.0.0.1:8000/images/kitchen.jpg" alt="">
+                                                <img src="/images/kitchen.jpg" alt="">
                                                 <a href="#" class="over-layer"><i class="fa fa-link"></i></a>
                                             </div>
                                             <div class="post-content">
@@ -482,7 +482,7 @@
                                     <div class="owl-item cloned" >
                                         <div class="post-slide">
                                             <div class="post-img">
-                                                <img src="http://127.0.0.1:8000/images/kitchen.jpg" alt="">
+                                                <img src="/images/kitchen.jpg" alt="">
                                                 <a href="#" class="over-layer"><i class="fa fa-link"></i></a>
                                             </div>
                                             <div class="post-content">
@@ -588,19 +588,19 @@
                             <p>Home staging also offers various benefits to you as the seller:</p>
                             <ul>
                                 <ul class="d-flex mb-0">
-                                    <img src="http://127.0.0.1:8000/images/about-us/logo.png" alt="">
+                                    <img src="/images/about-us/logo.png" alt="">
                                     <li>Organising your home reduces stress</li>
                                 </ul>
                                 <ul class="d-flex mb-0">
-                                    <img src="http://127.0.0.1:8000/images/about-us/logo.png" alt="">
+                                    <img src="/images/about-us/logo.png" alt="">
                                     <li>Selling unwanted items make you money</li>
                                 </ul>
                                 <ul class="d-flex mb-0">
-                                    <img src="http://127.0.0.1:8000/images/about-us/logo.png" alt="">
+                                    <img src="/images/about-us/logo.png" alt="">
                                     <li>Increases the value of your home</li>
                                 </ul>
                                 <ul class="d-flex mb-0">
-                                    <img src="http://127.0.0.1:8000/images/about-us/logo.png" alt="">
+                                    <img src="/images/about-us/logo.png" alt="">
                                     <li>Decluttering creates valuable space</li>
                                 </ul>
                             </ul>
@@ -611,7 +611,7 @@
                     </div>
                     <div class="col-12 col-lg-5 text-center pt-5 pt-lg-0">
                         <div class="consultation-image">
-                            <img src="http://127.0.0.1:8000/images/logo.jpg" alt="Urban Village Logo">
+                            <img src="/images/logo.jpg" alt="Urban Village Logo">
                         </div>
                     </div>
                 </div>
